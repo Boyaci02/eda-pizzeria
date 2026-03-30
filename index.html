@@ -4,462 +4,486 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eda's Pizzeria — Pizza, Grill & Kebab på Hisingen, Göteborg</title>
-  <meta name="description" content="Eda's Pizzeria på Hisingen i Göteborg. Handgjorda pizzor, kebab och grillrätter. Öppet mån–fre 10–21, lör–sön 11–21." />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="restaurant" />
+  <meta name="description" content="Eda's Pizzeria på Hisingen i Göteborg. Handgjorda pizzor, kebab och grillrätter bakade med kärlek. Öppet mån–fre 10–21, lör–sön 11–21." />
   <meta property="og:title" content="Eda's Pizzeria — Hisingen, Göteborg" />
   <meta property="og:description" content="Handgjorda pizzor bakade med kärlek. Katrinerovägen 2A, Hisingen." />
-  <meta property="og:url" content="https://edaspizzeria.se" />
+  <meta property="og:type" content="restaurant" />
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Restaurant",
-    "name": "Eda's Pizzeria",
-    "alternateName": "Edas Grill & Pizzeria",
-    "description": "Pizza, Grill och Kebab-restaurang på Hisingen i Göteborg.",
-    "url": "https://edaspizzeria.se",
-    "telephone": "+46315510080",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Katrinerovägen 2A",
-      "postalCode": "417 49",
-      "addressLocality": "Göteborg",
-      "addressCountry": "SE"
-    },
-    "openingHoursSpecification": [
-      {"@type": "OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"21:00"},
-      {"@type": "OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"11:00","closes":"21:00"}
-    ],
-    "servesCuisine": ["Pizza","Kebab","Grill"],
-    "priceRange": "kr"
-  }
+  {"@context":"https://schema.org","@type":"Restaurant","name":"Eda's Pizzeria","alternateName":"Edas Grill & Pizzeria","url":"https://edaspizzeria.se","telephone":"+46315510080","address":{"@type":"PostalAddress","streetAddress":"Katrinerovägen 2A","postalCode":"417 49","addressLocality":"Göteborg","addressCountry":"SE"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"21:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"11:00","closes":"21:00"}],"servesCuisine":["Pizza","Kebab","Grill"],"priceRange":"kr"}
   </script>
 
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ========================
-       NAVIGATION
-  ========================= -->
+  <!-- ======================== NAV ======================== -->
   <nav class="nav" role="navigation" aria-label="Huvudnavigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">Eda's <em>Pizzeria</em></a>
-
+      <a href="index.html" class="nav__logo">EDA'S <span>PIZZERIA</span></a>
       <div class="nav__links">
         <a href="menu.html">Meny</a>
         <a href="#om-oss">Om oss</a>
         <a href="kontakt.html">Kontakt</a>
       </div>
-
       <a href="tel:+46315510080" class="nav__tel">
-        <i data-lucide="phone" class="icon-xs"></i>
-        031-55 10 80
+        <i data-lucide="phone" class="xs"></i> 031-55 10 80
       </a>
-      <a href="menu.html" class="btn btn-primary nav__cta">Beställ nu</a>
-
+      <a href="menu.html" class="btn btn-gold nav__cta">Se menyn</a>
       <button class="nav__hamburger" aria-label="Öppna meny" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobilmeny">
-    <button class="mobile-menu__close" aria-label="Stäng meny">&times;</button>
+  <div class="mobile-menu" role="dialog" aria-modal="true">
+    <button class="mobile-menu__close" aria-label="Stäng">&times;</button>
     <nav class="mobile-menu__nav">
       <a href="menu.html">Meny</a>
       <a href="#om-oss">Om oss</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
     <div class="mobile-menu__foot">
-      <a href="menu.html" class="btn btn-primary">Beställ nu</a>
+      <a href="menu.html" class="btn btn-gold">Se menyn</a>
       <a href="tel:+46315510080" class="mobile-menu__tel">
-        <i data-lucide="phone" class="icon-xs"></i>
-        031-55 10 80
+        <i data-lucide="phone" class="xs"></i> 031-55 10 80
       </a>
     </div>
   </div>
 
   <main>
-    <!-- ========================
-         HERO — VIDEO BACKGROUND
-    ========================= -->
-    <section class="hero" aria-label="Välkommen till Eda's Pizzeria">
-      <!-- Video background -->
-      <video class="hero__video" autoplay muted loop playsinline preload="none" poster="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1400&q=80">
+
+    <!-- ======================== HERO ======================== -->
+    <section class="hero" aria-label="Välkommen">
+      <video class="hero__video" autoplay muted loop playsinline
+        poster="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1400&q=80">
         <source src="https://videos.pexels.com/video-files/3209808/3209808-hd_1920_1080_25fps.mp4" type="video/mp4" />
-        <!-- Fallback -->
         <div class="hero__video-fallback"></div>
       </video>
       <div class="hero__overlay" aria-hidden="true"></div>
 
       <div class="hero__content">
         <div class="hero__inner">
-          <div class="hero__text">
-            <div class="label hero__label">Edas Grill &amp; Pizzeria · Hisingen, Göteborg</div>
-            <h1 class="hero__title">
-              Vi bakar er pizza
-              <strong>med kärlek.</strong>
-            </h1>
-            <p class="hero__sub">
-              Handgjorda pizzor, färsk kebab och grillrätter på Katrinerovägen 2A.
-              Välkommen in — varje dag.
-            </p>
-            <div class="hero__actions">
-              <a href="menu.html" class="btn btn-primary">
-                Se vår meny
-                <i data-lucide="arrow-right" class="icon-sm"></i>
-              </a>
-              <a href="kontakt.html" class="btn btn-outline">Hitta oss</a>
+          <div class="hero__eyebrow">
+            <i data-lucide="map-pin" style="width:12px;height:12px;"></i>
+            Katrinerovägen 2A · Hisingen · Göteborg
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__title-line">Eda's</span>
+            <span class="hero__title-line">Pizzeria</span>
+          </h1>
+
+          <div class="hero__sub-row">
+            <p class="hero__slogan">"Vi bakar er pizza med kärlek"</p>
+            <div class="hero__badges">
+              <span class="badge">
+                <i data-lucide="clock" style="width:11px;height:11px;"></i>
+                Mån–Fre 10–21
+              </span>
+              <span class="badge">
+                <i data-lucide="clock" style="width:11px;height:11px;"></i>
+                Lör–Sön 11–21
+              </span>
             </div>
           </div>
 
-          <div class="hero__aside" aria-hidden="true">
-            <div class="hero__stat">
-              <span class="hero__stat-value">10–21</span>
-              <span class="hero__stat-label">Mån–Fre</span>
-            </div>
-            <div class="hero__divider"></div>
-            <div class="hero__stat">
-              <span class="hero__stat-value">11–21</span>
-              <span class="hero__stat-label">Lör–Sön</span>
-            </div>
+          <div class="hero__actions">
+            <a href="menu.html" class="btn btn-gold">
+              Se vår meny <i data-lucide="arrow-right" class="sm"></i>
+            </a>
+            <a href="kontakt.html" class="btn btn-outline-light">Hitta oss</a>
           </div>
         </div>
       </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scrolla</span>
+      </div>
     </section>
 
-    <!-- ========================
-         TICKER
-    ========================= -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker__track">
-        <!-- Duplicated for seamless loop -->
-        <span class="ticker__item"><i data-lucide="utensils" style="width:12px;height:12px;"></i> Handgjorda pizzor</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item">Hisingen, Göteborg</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item"><i data-lucide="clock" style="width:12px;height:12px;"></i> Öppet varje dag</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item">031-55 10 80</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item"><i data-lucide="leaf" style="width:12px;height:12px;"></i> Färska ingredienser</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item">Lunch mån–fre 10–14</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item"><i data-lucide="utensils" style="width:12px;height:12px;"></i> Handgjorda pizzor</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item">Hisingen, Göteborg</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item"><i data-lucide="clock" style="width:12px;height:12px;"></i> Öppet varje dag</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item">031-55 10 80</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item"><i data-lucide="leaf" style="width:12px;height:12px;"></i> Färska ingredienser</span>
-        <span class="ticker__dot"></span>
-        <span class="ticker__item">Lunch mån–fre 10–14</span>
-        <span class="ticker__dot"></span>
+    <!-- ======================== INTRO BAND (Gold ticker) ======================== -->
+    <div class="intro-band" aria-hidden="true">
+      <div class="intro-band__track">
+        <span class="intro-band__item"><i data-lucide="utensils" style="width:12px;height:12px;"></i>Handgjorda pizzor</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item">Hisingen, Göteborg</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item"><i data-lucide="phone" style="width:12px;height:12px;"></i>031-55 10 80</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item"><i data-lucide="clock" style="width:12px;height:12px;"></i>Öppet varje dag</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item"><i data-lucide="leaf" style="width:12px;height:12px;"></i>Färska ingredienser</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item">Lunch mån–fre 10–14</span>
+        <span class="intro-band__sep"></span>
+        <!-- Duplicate for seamless loop -->
+        <span class="intro-band__item"><i data-lucide="utensils" style="width:12px;height:12px;"></i>Handgjorda pizzor</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item">Hisingen, Göteborg</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item"><i data-lucide="phone" style="width:12px;height:12px;"></i>031-55 10 80</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item"><i data-lucide="clock" style="width:12px;height:12px;"></i>Öppet varje dag</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item"><i data-lucide="leaf" style="width:12px;height:12px;"></i>Färska ingredienser</span>
+        <span class="intro-band__sep"></span>
+        <span class="intro-band__item">Lunch mån–fre 10–14</span>
+        <span class="intro-band__sep"></span>
       </div>
     </div>
 
-    <!-- ========================
-         USP — VARFÖR OSS
-    ========================= -->
-    <section class="section usp" aria-labelledby="usp-heading">
+    <!-- ======================== STATS (Light) ======================== -->
+    <section class="stats sec-cream" aria-labelledby="stats-heading">
       <div class="container">
-        <div class="usp__header">
-          <div class="label">Det vi lovar dig</div>
-          <h2 class="usp__title" id="usp-heading">Mer än bara en pizza.</h2>
-        </div>
-        <div class="usp__grid">
-          <div class="usp__card reveal">
-            <span class="usp__num" aria-hidden="true">01</span>
-            <div class="usp__icon-wrap" aria-hidden="true">
-              <i data-lucide="flame" class="icon-md"></i>
-            </div>
-            <h3>Handgjorda pizzor</h3>
-            <p>Varje pizza rullas och bakas för hand med kärlek — precis som det ska vara.</p>
+        <div class="stats__inner" id="stats-grid">
+          <div class="stat-item reveal">
+            <span class="stat-item__num" data-count="22" data-suffix="+">0</span>
+            <span class="stat-item__label">Pizzavarianter</span>
           </div>
-          <div class="usp__card reveal reveal-delay-1">
-            <span class="usp__num" aria-hidden="true">02</span>
-            <div class="usp__icon-wrap" aria-hidden="true">
-              <i data-lucide="leaf" class="icon-md"></i>
-            </div>
-            <h3>Färska ingredienser</h3>
-            <p>Vi använder alltid råvaror av hög kvalitet i alla våra rätter, varje dag.</p>
+          <div class="stat-item reveal reveal-delay-1">
+            <span class="stat-item__num" data-count="4" data-suffix=".0 ★">0</span>
+            <span class="stat-item__label">Stjärnors betyg</span>
           </div>
-          <div class="usp__card reveal reveal-delay-2">
-            <span class="usp__num" aria-hidden="true">03</span>
-            <div class="usp__icon-wrap" aria-hidden="true">
-              <i data-lucide="package" class="icon-md"></i>
-            </div>
-            <h3>Snabb avhämtning</h3>
-            <p>Ring och beställ så har vi din mat klar när du kommer. Enkelt och snabbt.</p>
+          <div class="stat-item reveal reveal-delay-2">
+            <span class="stat-item__num" data-count="100" data-suffix="%">0</span>
+            <span class="stat-item__label">Handgjort</span>
           </div>
-          <div class="usp__card reveal reveal-delay-3">
-            <span class="usp__num" aria-hidden="true">04</span>
-            <div class="usp__icon-wrap" aria-hidden="true">
-              <i data-lucide="sun" class="icon-md"></i>
-            </div>
-            <h3>Lunchmeny</h3>
-            <p>Mån–fre kl. 10–14 erbjuder vi förmånliga lunchpriser på utvalda rätter.</p>
+          <div class="stat-item reveal reveal-delay-3">
+            <span class="stat-item__num" data-count="7">0</span>
+            <span class="stat-item__label">Dagar i veckan</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================
-         POPULÄRA RÄTTER
-    ========================= -->
-    <section class="section popular" aria-labelledby="popular-heading">
+    <!-- ======================== POPULAR (Dark 3×2) ======================== -->
+    <section class="popular" aria-labelledby="popular-heading">
       <div class="container">
         <div class="popular__header">
           <div>
-            <div class="label">Mest beställda</div>
-            <h2 class="popular__title" id="popular-heading">Från vårt kök.</h2>
+            <div class="overline" style="color:var(--gold);">Mest beställda</div>
+            <h2 class="popular__title" id="popular-heading">
+              Indulge in our<br><span>Exquisite Favorites</span>
+            </h2>
           </div>
-          <a href="menu.html" class="btn btn-ghost">
-            Se hela menyn
-            <i data-lucide="arrow-right" class="icon-sm"></i>
+          <a href="menu.html" class="btn btn-gold reveal">
+            Se hela menyn <i data-lucide="arrow-right" class="sm"></i>
           </a>
         </div>
 
         <div class="popular__grid">
-          <!-- Featured — large card -->
-          <article class="dish-card dish-card--featured reveal">
+
+          <!-- Card 1 — Husets -->
+          <article class="dish-card reveal">
             <div class="dish-card__img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700&q=80"
-                alt="Husets pizza — tomatsås, ost, skinka, champinjoner, köttfärs"
-                class="dish-card__img"
-                loading="lazy"
-              />
+              <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&q=80"
+                   alt="Husets pizza med skinka och champinjoner" class="dish-card__img" loading="lazy" />
+              <span class="dish-card__price-badge">80 kr</span>
+              <div class="dish-card__hover">
+                <span class="dish-card__hover-text">
+                  Se meny <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </span>
+              </div>
             </div>
             <div class="dish-card__body">
-              <span class="dish-card__tag dish-card__tag--gold">
-                <i data-lucide="star" style="width:9px;height:9px;"></i> Husets Favorit
-              </span>
+              <div class="dish-card__stars">
+                <div class="dish-card__star-row">
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span>
+                </div>
+                <span class="dish-card__tag">Favorit</span>
+              </div>
               <div class="dish-card__name">Husets Pizza</div>
-              <p class="dish-card__ingredients">Tomatsås, ost, skinka, champinjoner, köttfärs, stark sås</p>
-              <div class="dish-card__price">80 kr</div>
+              <p class="dish-card__desc">Tomatsås, ost, skinka, champinjoner, köttfärs, stark sås</p>
+              <div class="dish-card__footer">
+                <a href="menu.html" class="dish-card__link">
+                  Se meny <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+                </a>
+              </div>
             </div>
           </article>
 
-          <!-- Regular cards — right column -->
+          <!-- Card 2 — Ferrari -->
           <article class="dish-card reveal reveal-delay-1">
             <div class="dish-card__img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80"
-                alt="Tuve Line specialpizza med oxfilé, skinka, bacon, köttfärs"
-                class="dish-card__img"
-                loading="lazy"
-              />
+              <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80"
+                   alt="Ferrari kebabpizza" class="dish-card__img" loading="lazy" />
+              <span class="dish-card__price-badge">95 kr</span>
+              <div class="dish-card__hover">
+                <span class="dish-card__hover-text">
+                  Se meny <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </span>
+              </div>
             </div>
             <div class="dish-card__body">
-              <span class="dish-card__tag dish-card__tag--red">Special</span>
-              <div class="dish-card__name">Tuve Line</div>
-              <p class="dish-card__ingredients">Skinka, oxfilé, bacon, köttfärs, lök, vitlök, paprika</p>
-              <div class="dish-card__price">105 kr</div>
-            </div>
-          </article>
-
-          <article class="dish-card reveal reveal-delay-2">
-            <div class="dish-card__img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600&q=80"
-                alt="Vegetarisk pizza med champinjoner, paprika, oliver och ruccola"
-                class="dish-card__img"
-                loading="lazy"
-              />
-            </div>
-            <div class="dish-card__body">
-              <span class="dish-card__tag dish-card__tag--green">
-                <i data-lucide="leaf" style="width:9px;height:9px;"></i> Vegetarisk
-              </span>
-              <div class="dish-card__name">Vegetarisk</div>
-              <p class="dish-card__ingredients">Champinjoner, lök, paprika, kronärtskocka, oliver, ruccola</p>
-              <div class="dish-card__price">75 kr</div>
-            </div>
-          </article>
-
-          <article class="dish-card reveal reveal-delay-1">
-            <div class="dish-card__img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80"
-                alt="Ferrari kebabpizza med kebabkött, sallad, tomat och gurka"
-                class="dish-card__img"
-                loading="lazy"
-              />
-            </div>
-            <div class="dish-card__body">
-              <span class="dish-card__tag dish-card__tag--red">Kebab</span>
+              <div class="dish-card__stars">
+                <div class="dish-card__star-row">
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star empty">★</span>
+                </div>
+                <span class="dish-card__tag">Kebab</span>
+              </div>
               <div class="dish-card__name">Ferrari</div>
-              <p class="dish-card__ingredients">Kebabkött, isbergssallad, lök, tomat, peperoni, gurka</p>
-              <div class="dish-card__price">95 kr</div>
+              <p class="dish-card__desc">Kebabkött, isbergssallad, lök, tomat, peperoni, gurka</p>
+              <div class="dish-card__footer">
+                <a href="menu.html" class="dish-card__link">
+                  Se meny <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+                </a>
+              </div>
             </div>
           </article>
 
+          <!-- Card 3 — Tuve Line -->
           <article class="dish-card reveal reveal-delay-2">
             <div class="dish-card__img-wrap">
-              <img
-                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80"
-                alt="Sallad med fräscha ingredienser"
-                class="dish-card__img"
-                loading="lazy"
-              />
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80"
+                   alt="Tuve Line specialpizza" class="dish-card__img" loading="lazy" />
+              <span class="dish-card__price-badge">105 kr</span>
+              <div class="dish-card__hover">
+                <span class="dish-card__hover-text">
+                  Se meny <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </span>
+              </div>
             </div>
             <div class="dish-card__body">
-              <span class="dish-card__tag dish-card__tag--green">Sallad</span>
-              <div class="dish-card__name">Parmasallad</div>
-              <p class="dish-card__ingredients">Parmaskinka, oliver, mozzarella, ruccola</p>
-              <div class="dish-card__price">80 kr</div>
+              <div class="dish-card__stars">
+                <div class="dish-card__star-row">
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span>
+                </div>
+                <span class="dish-card__tag">Special</span>
+              </div>
+              <div class="dish-card__name">Tuve Line</div>
+              <p class="dish-card__desc">Skinka, oxfilé, bacon, köttfärs, lök, vitlök, paprika</p>
+              <div class="dish-card__footer">
+                <a href="menu.html" class="dish-card__link">
+                  Se meny <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+                </a>
+              </div>
             </div>
           </article>
+
+          <!-- Card 4 — Vegetarisk -->
+          <article class="dish-card reveal reveal-delay-1">
+            <div class="dish-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600&q=80"
+                   alt="Vegetarisk pizza" class="dish-card__img" loading="lazy" />
+              <span class="dish-card__price-badge">75 kr</span>
+              <div class="dish-card__hover">
+                <span class="dish-card__hover-text">
+                  Se meny <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </span>
+              </div>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__stars">
+                <div class="dish-card__star-row">
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star empty">★</span>
+                </div>
+                <span class="dish-card__tag">Vegetarisk</span>
+              </div>
+              <div class="dish-card__name">Vegetarisk</div>
+              <p class="dish-card__desc">Champinjoner, lök, paprika, kronärtskocka, oliver, ruccola</p>
+              <div class="dish-card__footer">
+                <a href="menu.html" class="dish-card__link">
+                  Se meny <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 — Parma -->
+          <article class="dish-card reveal reveal-delay-2">
+            <div class="dish-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80"
+                   alt="Parma specialpizza" class="dish-card__img" loading="lazy" />
+              <span class="dish-card__price-badge">95 kr</span>
+              <div class="dish-card__hover">
+                <span class="dish-card__hover-text">
+                  Se meny <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </span>
+              </div>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__stars">
+                <div class="dish-card__star-row">
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span>
+                </div>
+                <span class="dish-card__tag">Premium</span>
+              </div>
+              <div class="dish-card__name">Parma</div>
+              <p class="dish-card__desc">Parmaskinka, färsk tomat, mozzarella, basilika, ruccola</p>
+              <div class="dish-card__footer">
+                <a href="menu.html" class="dish-card__link">
+                  Se meny <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6 — Acapulco -->
+          <article class="dish-card reveal reveal-delay-3">
+            <div class="dish-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80"
+                   alt="Acapulco specialpizza" class="dish-card__img" loading="lazy" />
+              <span class="dish-card__price-badge">85 kr</span>
+              <div class="dish-card__hover">
+                <span class="dish-card__hover-text">
+                  Se meny <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </span>
+              </div>
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__stars">
+                <div class="dish-card__star-row">
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star">★</span><span class="dish-card__star">★</span>
+                  <span class="dish-card__star empty">★</span>
+                </div>
+                <span class="dish-card__tag">Stark</span>
+              </div>
+              <div class="dish-card__name">Acapulco</div>
+              <p class="dish-card__desc">Oxfilé, champinjoner, lök, tacosås, vitlök, jalapeño</p>
+              <div class="dish-card__footer">
+                <a href="menu.html" class="dish-card__link">
+                  Se meny <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- ========================
-         INFO BAND
-    ========================= -->
-    <div class="info-band" role="complementary" aria-label="Snabbinformation">
-      <div class="info-band__inner container">
-        <div class="info-band__item">
-          <div class="info-band__icon-wrap" aria-hidden="true">
-            <i data-lucide="clock" class="icon-md"></i>
+    <!-- ======================== TESTIMONIAL (Light) ======================== -->
+    <section class="testimonial" aria-labelledby="testimonial-heading">
+      <div class="container">
+        <div class="testimonial__inner reveal">
+          <span class="testimonial__stars">★★★★★</span>
+          <blockquote class="testimonial__quote" id="testimonial-heading">
+            "Bästa pizzan på hela Hisingen — vi kommer tillbaka varje vecka. Alltid fräscht, alltid gott och tillagat med kärlek."
+          </blockquote>
+          <p class="testimonial__author">— En nöjd stamkund, Göteborg</p>
+          <div class="testimonial__avatars">
+            <div class="testimonial__avatar-group">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="" class="testimonial__avatar" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="" class="testimonial__avatar" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="" class="testimonial__avatar" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="" class="testimonial__avatar" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80" alt="" class="testimonial__avatar" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" alt="" class="testimonial__avatar" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="" class="testimonial__avatar" loading="lazy" />
+            </div>
           </div>
-          <div class="info-band__text-wrap">
-            <span class="info-band__label">Öppettider</span>
-            <span class="info-band__value">Mån–Fre 10–21 &nbsp;·&nbsp; Lör–Sön 11–21</span>
-          </div>
-        </div>
-        <div class="info-band__item">
-          <div class="info-band__icon-wrap" aria-hidden="true">
-            <i data-lucide="map-pin" class="icon-md"></i>
-          </div>
-          <div class="info-band__text-wrap">
-            <span class="info-band__label">Adress</span>
-            <span class="info-band__value">Katrinerovägen 2A, Hisingen, Göteborg</span>
-          </div>
-        </div>
-        <div class="info-band__item">
-          <div class="info-band__icon-wrap" aria-hidden="true">
-            <i data-lucide="phone" class="icon-md"></i>
-          </div>
-          <div class="info-band__text-wrap">
-            <span class="info-band__label">Ring oss</span>
-            <span class="info-band__value"><a href="tel:+46315510080">031-55 10 80</a></span>
-          </div>
+          <p class="testimonial__count">Bland hundratals nöjda kunder på Hisingen</p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- ========================
-         LUNCH
-    ========================= -->
-    <section class="section lunch" aria-labelledby="lunch-heading">
+    <!-- ======================== LUNCH (Dark) ======================== -->
+    <section class="lunch" aria-labelledby="lunch-heading">
       <div class="container">
         <div class="lunch__inner">
-          <div class="lunch__text reveal">
-            <div class="lunch__badge">Luncherbjudande</div>
-            <h2 class="lunch__title" id="lunch-heading">Förmånlig<br>varje vardag.</h2>
+          <div class="reveal">
+            <div class="overline lunch__overline">Luncherbjudande</div>
+            <h2 class="lunch__title" id="lunch-heading">
+              Förmånlig lunch<br><span>varje vardag.</span>
+            </h2>
             <p class="lunch__desc">
               Måndag till fredag serverar vi lunch med förmånliga priser. Välj bland handgjorda pizzor och rätter — en god måltid mitt på dagen.
             </p>
-            <div class="lunch__times">
-              <div class="lunch__time-row">
+            <div class="lunch__hours">
+              <div class="lunch__hour-row">
                 <span>Måndag – Fredag</span>
                 <span>10:00 – 14:00</span>
               </div>
-              <div class="lunch__time-row">
+              <div class="lunch__hour-row">
                 <span>Lördag – Söndag</span>
                 <span>Ingen lunch</span>
               </div>
             </div>
-            <a href="tel:+46315510080" class="btn btn-primary">
-              <i data-lucide="phone" class="icon-sm"></i>
+            <a href="tel:+46315510080" class="btn btn-gold">
+              <i data-lucide="phone" class="sm"></i>
               Ring och beställ
             </a>
           </div>
-          <div class="lunch__visual reveal reveal-delay-2">
+          <div class="lunch__image reveal reveal-delay-2">
             <img
               src="https://images.unsplash.com/photo-1444492417251-9c84a5fa18e0?w=800&q=80"
               alt="Pizza som tillagas i ugn"
               loading="lazy"
             />
-            <p class="lunch__visual-caption">Nybakad och varm — varje dag.</p>
+            <p class="lunch__image-caption">Nybakad och varm — varje dag.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ========================
-         OM OSS
-    ========================= -->
-    <section class="section about section-alt" id="om-oss" aria-labelledby="about-heading">
+    <!-- ======================== OM OSS (Light) ======================== -->
+    <section class="about" id="om-oss" aria-labelledby="about-heading">
       <div class="container">
         <div class="about__inner">
-          <div class="reveal">
-            <div class="label" style="margin-bottom:1.5rem;">Vår historia</div>
+          <div class="about__image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
+              alt="Restaurangens välkomnande atmosfär"
+              loading="lazy"
+            />
+            <span class="about__badge">Hisingen, Göteborg</span>
+          </div>
+          <div class="reveal reveal-delay-2">
+            <div class="overline about__overline">Vår historia</div>
+            <h2 class="about__title" id="about-heading">Välkommen till<br>Eda's Pizzeria.</h2>
             <blockquote class="about__quote">
-              "Vi bakar er pizza med kärlek."
+              "Vi bakar er pizza med kärlek — alltid."
             </blockquote>
             <p class="about__text">
               Edas Grill &amp; Pizzeria är en välkänd krog på Hisingen i Göteborg. Hos oss hittar du klassiska handgjorda pizzor, kebab, hamburgare och sallader — tillagade med omsorg och de bästa ingredienserna.
             </p>
             <p class="about__text" style="margin-bottom:2.5rem;">
-              Vår passion är enkel: att ge dig en god, vällagad måltid varje gång du besöker oss. Vi är stolta över varje pizza som lämnar vår ugn.
+              Vår passion är enkel: att ge dig en god, vällagad måltid varje gång. Vi är stolta över varje pizza som lämnar vår ugn.
             </p>
             <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
-              <a href="menu.html" class="btn btn-primary">Utforska menyn</a>
-              <a href="kontakt.html" class="btn btn-outline">Hitta oss</a>
+              <a href="menu.html" class="btn btn-red">Utforska menyn</a>
+              <a href="kontakt.html" class="btn btn-outline-dark">Hitta oss</a>
             </div>
-          </div>
-          <div class="about__image reveal reveal-delay-2">
-            <img
-              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
-              alt="Restaurangens interiör — välkomnande atmosfär"
-              loading="lazy"
-            />
-            <span class="about__image-badge">Hisingen, Göteborg</span>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- ========================
-       FOOTER
-  ========================= -->
+  <!-- ======================== FOOTER ======================== -->
   <footer>
     <div class="container">
       <div class="footer__grid">
         <div>
-          <a href="index.html" class="footer__logo">Eda's <em>Pizzeria</em></a>
-          <p class="footer__desc">Edas Grill &amp; Pizzeria — handgjorda pizzor och grillrätter på Hisingen i Göteborg. "Vi bakar er pizza med kärlek."</p>
+          <a href="index.html" class="footer__logo">EDA'S <span>PIZZERIA</span></a>
+          <p class="footer__desc">Edas Grill &amp; Pizzeria — handgjorda pizzor och grillrätter på Hisingen i Göteborg. Vi bakar er pizza med kärlek.</p>
           <div class="footer__social">
             <a href="https://www.instagram.com/edas.pizzeria" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">
-              <i data-lucide="instagram" class="icon-sm"></i>
+              <i data-lucide="instagram" class="sm"></i>
             </a>
             <a href="https://www.facebook.com/pages/Edas-Pizzeria" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">
-              <i data-lucide="facebook" class="icon-sm"></i>
+              <i data-lucide="facebook" class="sm"></i>
             </a>
           </div>
         </div>
-
         <div class="footer__col">
           <h4>Navigering</h4>
           <ul>
@@ -469,30 +493,26 @@
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </div>
-
         <div class="footer__col">
           <h4>Öppettider</h4>
           <ul>
-            <li><span><i data-lucide="clock" class="icon-xs"></i> Mån–Fre: 10:00–21:00</span></li>
-            <li><span><i data-lucide="clock" class="icon-xs"></i> Lör–Sön: 11:00–21:00</span></li>
-            <li><span><i data-lucide="sun" class="icon-xs"></i> Lunch: Mån–Fre 10–14</span></li>
+            <li><span><i data-lucide="clock" class="xs"></i> Mån–Fre: 10–21</span></li>
+            <li><span><i data-lucide="clock" class="xs"></i> Lör–Sön: 11–21</span></li>
+            <li><span><i data-lucide="sun" class="xs"></i> Lunch: Mån–Fre 10–14</span></li>
           </ul>
         </div>
-
         <div class="footer__col">
           <h4>Kontakt</h4>
           <ul>
-            <li><a href="tel:+46315510080"><i data-lucide="phone" class="icon-xs"></i> 031-55 10 80</a></li>
-            <li><span><i data-lucide="map-pin" class="icon-xs"></i> Katrinerovägen 2A</span></li>
+            <li><a href="tel:+46315510080"><i data-lucide="phone" class="xs"></i> 031-55 10 80</a></li>
+            <li><span><i data-lucide="map-pin" class="xs"></i> Katrinerovägen 2A</span></li>
             <li><span>417 49 Göteborg</span></li>
-            <li><span>Hisingen</span></li>
           </ul>
         </div>
       </div>
-
       <div class="footer__bottom">
         <p class="footer__copy">© 2026 Eda's Pizzeria — Edas Grill &amp; Pizzeria. Alla rättigheter förbehållna.</p>
-        <a href="menu.html" class="btn btn-outline" style="padding:0.5rem 1.2rem; font-size:0.72rem;">Beställ nu</a>
+        <a href="menu.html" class="btn btn-outline-light" style="padding:0.5rem 1.2rem; font-size:0.7rem;">Beställ nu</a>
       </div>
     </div>
   </footer>

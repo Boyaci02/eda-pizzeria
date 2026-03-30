@@ -12,7 +12,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -20,35 +20,33 @@
   <!-- NAVIGATION -->
   <nav class="nav" role="navigation" aria-label="Huvudnavigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">Eda's <em>Pizzeria</em></a>
+      <a href="index.html" class="nav__logo">EDA'S <span>PIZZERIA</span></a>
       <div class="nav__links">
         <a href="menu.html" class="active">Meny</a>
         <a href="index.html#om-oss">Om oss</a>
         <a href="kontakt.html">Kontakt</a>
       </div>
       <a href="tel:+46315510080" class="nav__tel">
-        <i data-lucide="phone" class="icon-xs"></i>
-        031-55 10 80
+        <i data-lucide="phone" class="xs"></i> 031-55 10 80
       </a>
-      <a href="tel:+46315510080" class="btn btn-primary nav__cta">Ring &amp; beställ</a>
+      <a href="tel:+46315510080" class="btn btn-gold nav__cta">Ring oss</a>
       <button class="nav__hamburger" aria-label="Öppna meny" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobilmeny">
-    <button class="mobile-menu__close" aria-label="Stäng meny">&times;</button>
+  <div class="mobile-menu" role="dialog" aria-modal="true">
+    <button class="mobile-menu__close" aria-label="Stäng">&times;</button>
     <nav class="mobile-menu__nav">
       <a href="menu.html">Meny</a>
       <a href="index.html#om-oss">Om oss</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
     <div class="mobile-menu__foot">
-      <a href="tel:+46315510080" class="btn btn-primary">Ring oss</a>
+      <a href="tel:+46315510080" class="btn btn-gold">Ring oss</a>
       <a href="tel:+46315510080" class="mobile-menu__tel">
-        <i data-lucide="phone" class="icon-xs"></i>
-        031-55 10 80
+        <i data-lucide="phone" class="xs"></i> 031-55 10 80
       </a>
     </div>
   </div>
