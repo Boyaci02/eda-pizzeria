@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meny — Eda's Pizzeria | Pizza, Kebab & Grill på Hisingen</title>
+  <meta name="description" content="Komplett meny för Eda's Pizzeria. Pizzor från 70 kr, kebabpizzor, specialpizzor, skaldjur, sallader och mer. Hisingen, Göteborg." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Huvudnavigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Eda's<span>.</span></a>
+      <div class="nav__links">
+        <a href="menu.html" style="color:#E67E22;">Meny</a>
+        <a href="index.html#om-oss">Om oss</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+      <a href="tel:+46315510080" class="nav__tel">031-55 10 80</a>
+      <a href="tel:+46315510080" class="btn btn-primary nav__cta">Ring &amp; beställ</a>
+      <button class="nav__hamburger" aria-label="Öppna meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Mobilmeny">
+    <button class="mobile-menu__close" aria-label="Stäng meny">&times;</button>
+    <a href="menu.html">Meny</a>
+    <a href="index.html#om-oss">Om oss</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="tel:+46315510080" class="btn btn-primary">Ring oss</a>
+    <span class="mobile-menu__tel">031-55 10 80</span>
+  </div>
+
+  <!-- MENU HERO -->
+  <header class="menu-hero">
+    <div class="container">
+      <span class="section-label">Edas Grill &amp; Pizzeria</span>
+      <h1>Vår Meny</h1>
+      <p>Handgjorda pizzor, kebab, sallader och mer — alltid tillagade med kärlek och färska ingredienser.</p>
+    </div>
+  </header>
+
+  <!-- STICKY CATEGORY TABS -->
+  <div class="menu-tabs" role="navigation" aria-label="Menykategorier">
+    <div class="menu-tabs__inner container">
+      <button class="menu-tab" data-target="pizzor" aria-label="Pizzor">🍕 Pizzor</button>
+      <button class="menu-tab" data-target="kycklingkebab-pizzor" aria-label="Kycklingkebab">🍗 Kyckling</button>
+      <button class="menu-tab" data-target="skaldjur" aria-label="Skaldjurspizzor">🦐 Skaldjur</button>
+      <button class="menu-tab" data-target="kebabpizzor" aria-label="Kebabpizzor">🥙 Kebabpizzor</button>
+      <button class="menu-tab" data-target="specialpizzor" aria-label="Specialpizzor">⭐ Special</button>
+      <button class="menu-tab" data-target="sallader" aria-label="Sallader">🥗 Sallader</button>
+      <button class="menu-tab" data-target="kebabratter" aria-label="Kebabrätter">🥩 Kebab</button>
+      <button class="menu-tab" data-target="hamburgare" aria-label="Hamburgare">🍔 Burgare</button>
+      <button class="menu-tab" data-target="ovrigt" aria-label="Övrigt">🍽️ Övrigt</button>
+    </div>
+  </div>
+
+  <main class="menu-content">
+    <div class="container">
+
+      <!-- ============================================================
+           1. PIZZOR (VANLIGA)
+      ============================================================= -->
+      <section class="menu-section" id="pizzor" aria-labelledby="pizzor-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🍕</span>
+          <div>
+            <h2 class="menu-section__title" id="pizzor-heading">Pizzor</h2>
+            <p class="menu-section__note">Alla pizzor serveras med valfri sås om inget annat anges</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">1.</span> Margareta</div>
+            <p class="menu-item__ingredients">Tomatsås, ost</p>
+          </div>
+          <div class="menu-item__price">70 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">2.</span> Funghi</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, champinjoner</p>
+          </div>
+          <div class="menu-item__price">70 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">3.</span> Trakya</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, fårost, färsk tomat, lök, vitlök</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">4.</span> Skinka</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">5.</span> Caprissiosa</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">6.</span> Hawaii</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, ananas</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">7.</span> Gladiatore</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, räkor</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">8.</span> Venedig</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, tonfisk</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">9.</span> Kyckling</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kyckling, champinjoner, lök, valfri sås</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">10.</span> Marinara</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, räkor, musslor</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">11.</span> Quatro</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner, räkor, kronärtskocka</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">12.</span> Calzone <span class="tag tag-special">Inbakad</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">13.</span> Ali Baba</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, lök, köttfärs</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">14.</span> Laguna</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, bacon, lök, köttfärs</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">15.</span> Cacciatore</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, salami, champinjoner, lök</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">16.</span> Mexikana <span class="tag tag-spicy">🌶️ Stark</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, köttfärs, paprika, lök, stark sås, peperoni</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">17.</span> Husets <span class="tag tag-special">Favorit</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner, köttfärs, stark sås</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">18.</span> Gorgonzola</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, paprika, gorgonzola</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">19.</span> Padrone <span class="tag tag-special">Inbakad</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, köttfärs, lök, stark sås</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">20.</span> Kebabpizza</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kebabkött, lök, peperoni, valfri sås</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">21.</span> Jägare</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, ägg, bearnaisesås</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">22.</span> Vegetarisk <span class="tag tag-veg">🥬 Veg</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, champinjoner, lök, paprika, kronärtskocka, peperoni, oliver, ruccola</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           2. KYCKLINGKEBAB-PIZZOR
+      ============================================================= -->
+      <section class="menu-section" id="kycklingkebab-pizzor" aria-labelledby="kyckling-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🍗</span>
+          <div>
+            <h2 class="menu-section__title" id="kyckling-heading">Kycklingkebab-pizzor</h2>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">1.</span> Kyckling med frukt</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, ananas, banan, nötter, curry</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">2.</span> Primavera</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kyckling, ananas, färsk tomat, peperoni, vitlök</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           3. SKALDJURSPIZZOR
+      ============================================================= -->
+      <section class="menu-section" id="skaldjur" aria-labelledby="skaldjur-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🦐</span>
+          <div>
+            <h2 class="menu-section__title" id="skaldjur-heading">Skaldjurspizzor</h2>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">1.</span> Rimini</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, räkor, krabba</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">2.</span> Skaldjur Special</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kräftor, räkor, krabba, vitlök, lök</p>
+          </div>
+          <div class="menu-item__price">75 kr</div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           4. KEBABPIZZOR
+      ============================================================= -->
+      <section class="menu-section" id="kebabpizzor" aria-labelledby="kebabpizzor-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🥙</span>
+          <div>
+            <h2 class="menu-section__title" id="kebabpizzor-heading">Kebabpizzor</h2>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">1.</span> Ferrari <span class="tag tag-special">Populär</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kebabkött, isbergssallad, lök, tomat, peperoni, gurka</p>
+          </div>
+          <div class="menu-item__price">95 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">2.</span> Volvo Amazon <span class="tag tag-special">Inbakad</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kebabkött, jalapeño, vitlökssås</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">3.</span> Stena Line</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kebabkött, paprika, lök, tomat</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">4.</span> Kebabtaco</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, tacosås, jalapeño, vitlökssås</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">5.</span> Bageriets</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, champinjoner, bearnaisesås, peperoni</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">6.</span> Lamborgini</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, bacon, ananas, bearnaisesås</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">7.</span> Adnan's Special</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, kyckling, kebab, fårost, lök</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           5. SPECIALPIZZOR
+      ============================================================= -->
+      <section class="menu-section" id="specialpizzor" aria-labelledby="special-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">⭐</span>
+          <div>
+            <h2 class="menu-section__title" id="special-heading">Specialpizzor</h2>
+            <p class="menu-section__note">Premiumrätter med oxfilé och exklusiva ingredienser</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">1.</span> La Bella</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, färsk tomat, vitlök</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">2.</span> Vitlöksspecial</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, paprika, gorgonzola, vitlök, färsk tomat</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">3.</span> Sultan</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, räkor, bearnaisesås</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">4.</span> Ciao Ciao <span class="tag tag-special">Inbakad</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, vitlök</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">5.</span> Indiana <span class="tag tag-special">Inbakad</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, gorgonzola, bearnaisesås</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">6.</span> Milano</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, ananas, bearnaisesås</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">7.</span> Acapulco <span class="tag tag-spicy">🌶️ Stark</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, tacosås, vitlök, jalapeño</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">8.</span> Afrikana</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, ananas, banan, nötter, curry</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">9.</span> Mafioso</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, lök, fårost, peperoni, oliver</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">10.</span> Favoriten</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, gorgonzola, bearnaisesås</p>
+          </div>
+          <div class="menu-item__price">85 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">11.</span> Orientale</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, champinjoner, gorgonzola, köttfärs, bearnaisesås</p>
+          </div>
+          <div class="menu-item__price">95 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">12.</span> Tuve Line <span class="tag tag-special">Stor favorit</span></div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, bacon, köttfärs, lök, vitlök, paprika</p>
+          </div>
+          <div class="menu-item__price">105 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">13.</span> Mozzarella</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, skinka, salami, mozzarella, färsk tomat, basilika, ruccola</p>
+          </div>
+          <div class="menu-item__price">95 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">14.</span> Della Casa</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, salami, parmaskinka, mozzarella, basilika, ruccola</p>
+          </div>
+          <div class="menu-item__price">95 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">15.</span> Parma</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, parmaskinka, färsk tomat, mozzarella, basilika, ruccola</p>
+          </div>
+          <div class="menu-item__price">95 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">16.</span> Formaggi</div>
+            <p class="menu-item__ingredients">Tomatsås, ost, mozzarella, fårost, gorgonzola, basilika, ruccola</p>
+          </div>
+          <div class="menu-item__price">95 kr</div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           6. SALLADER
+      ============================================================= -->
+      <section class="menu-section" id="sallader" aria-labelledby="sallader-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🥗</span>
+          <div>
+            <h2 class="menu-section__title" id="sallader-heading">Sallader</h2>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">1.</span> Kebabsallad</div>
+            <p class="menu-item__ingredients">Majs, peperoni</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">2.</span> Kycklingsallad</div>
+            <p class="menu-item__ingredients">Majs, paprika, lök, peperoni</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">3.</span> Ost- &amp; Skinksallad</div>
+            <p class="menu-item__ingredients">Majs, ägg</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">4.</span> Tonfisksallad</div>
+            <p class="menu-item__ingredients">Majs, citron, paprika, lök, oliver</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">5.</span> Räk- &amp; Kräftsallad</div>
+            <p class="menu-item__ingredients">Majs, citron, ägg, lök</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">6.</span> Grekisk sallad <span class="tag tag-veg">🥬 Veg</span></div>
+            <p class="menu-item__ingredients">Fårost, oliver, paprika, lök, peperoni</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">7.</span> Avokadosallad</div>
+            <p class="menu-item__ingredients">Skinka, ost, räkor, ananas, majs, avokado</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name"><span class="menu-item__num">8.</span> Parmasallad</div>
+            <p class="menu-item__ingredients">Parmaskinka, oliver, mozzarella, ruccola</p>
+          </div>
+          <div class="menu-item__price">80 kr</div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           7. KEBABRÄTTER
+      ============================================================= -->
+      <section class="menu-section" id="kebabratter" aria-labelledby="kebab-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🥩</span>
+          <div>
+            <h2 class="menu-section__title" id="kebab-heading">Kebabrätter</h2>
+            <p class="menu-section__note">Priser och rätter — kontakta oss för aktuell information</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name">Kebabtalrik</div>
+            <p class="menu-item__ingredients">Serveras med bröd, sallad och sås. Fråga om aktuellt pris.</p>
+          </div>
+          <div class="menu-item__price">—</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name">Kycklingkebab</div>
+            <p class="menu-item__ingredients">Marinerad kyckling, serveras med tillbehör. Fråga om aktuellt pris.</p>
+          </div>
+          <div class="menu-item__price">—</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name">Kebabrulle</div>
+            <p class="menu-item__ingredients">Kebabkött i bröd med sallad och sås. Fråga om aktuellt pris.</p>
+          </div>
+          <div class="menu-item__price">—</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name">Kycklingrulle</div>
+            <p class="menu-item__ingredients">Kyckling i bröd med sallad och sås. Fråga om aktuellt pris.</p>
+          </div>
+          <div class="menu-item__price">—</div>
+        </div>
+        <div style="margin-top:1rem;">
+          <p style="font-size:0.85rem; color:var(--text-muted); font-style:italic;">
+            ℹ️ Ring oss på <a href="tel:+46315510080" style="color:var(--accent-orange);">031-55 10 80</a> för fullständig meny och priser på kebabrätter.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           8. HAMBURGARE
+      ============================================================= -->
+      <section class="menu-section" id="hamburgare" aria-labelledby="burgare-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🍔</span>
+          <div>
+            <h2 class="menu-section__title" id="burgare-heading">Hamburgare</h2>
+            <p class="menu-section__note">Priser och rätter — kontakta oss för aktuell information</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name">Hamburgare</div>
+            <p class="menu-item__ingredients">Serveras med bröd och tillbehör. Ring för aktuella priser och alternativ.</p>
+          </div>
+          <div class="menu-item__price">—</div>
+        </div>
+        <div style="margin-top:1rem;">
+          <p style="font-size:0.85rem; color:var(--text-muted); font-style:italic;">
+            ℹ️ Ring oss på <a href="tel:+46315510080" style="color:var(--accent-orange);">031-55 10 80</a> för fullständig burgarmeny och priser.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           9. ÖVRIGT
+      ============================================================= -->
+      <section class="menu-section" id="ovrigt" aria-labelledby="ovrigt-heading">
+        <div class="menu-section__header">
+          <span class="menu-section__icon" aria-hidden="true">🍽️</span>
+          <div>
+            <h2 class="menu-section__title" id="ovrigt-heading">Övrigt</h2>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name">Lasagne</div>
+            <p class="menu-item__ingredients">Hemlagad lasagne. Ring för aktuellt pris.</p>
+          </div>
+          <div class="menu-item__price">—</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__left">
+            <div class="menu-item__name">Barnmeny</div>
+            <p class="menu-item__ingredients">Anpassad portion för barn. Fråga personalen.</p>
+          </div>
+          <div class="menu-item__price">—</div>
+        </div>
+        <div style="margin-top:1rem;">
+          <p style="font-size:0.85rem; color:var(--text-muted); font-style:italic;">
+            ℹ️ Vi erbjuder även drycker och andra rätter — ring <a href="tel:+46315510080" style="color:var(--accent-orange);">031-55 10 80</a> för mer info.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           EXTRATILLVAL
+      ============================================================= -->
+      <div class="extras" role="region" aria-label="Extratillval">
+        <button class="extras__toggle" aria-expanded="false">
+          <span>➕ Extratillval — lägg till på din pizza</span>
+          <span class="extras__arrow" aria-hidden="true">▾</span>
+        </button>
+        <div class="extras__body">
+          <div class="extras__grid">
+            <div class="extra-item"><span>Lök</span><span>5 kr</span></div>
+            <div class="extra-item"><span>Kronärtskocka</span><span>5 kr</span></div>
+            <div class="extra-item"><span>Chips</span><span>3 kr</span></div>
+            <div class="extra-item"><span>Tomater (färska)</span><span>6 kr</span></div>
+            <div class="extra-item"><span>Vitlök</span><span>6 kr</span></div>
+            <div class="extra-item"><span>Ananas</span><span>6 kr</span></div>
+            <div class="extra-item"><span>Banan</span><span>6 kr</span></div>
+            <div class="extra-item"><span>Jordnötter</span><span>6 kr</span></div>
+            <div class="extra-item"><span>Majs</span><span>6 kr</span></div>
+            <div class="extra-item"><span>Curry</span><span>6 kr</span></div>
+            <div class="extra-item"><span>Bacon</span><span>7 kr</span></div>
+            <div class="extra-item"><span>Champinjoner</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Sallad</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Oliver</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Paprika</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Peperoni</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Ägg</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Musslor</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Ajvar</span><span>8 kr</span></div>
+            <div class="extra-item"><span>Kräftstjärtar</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Extra-ost</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Salami</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Sparris</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Skinka</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Tonfisk</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Kebabsås</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Bearnaisesås</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Fetaost</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Kantareller</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Tacosås</span><span>10 kr</span></div>
+            <div class="extra-item"><span>Köttfärs</span><span>12 kr</span></div>
+            <div class="extra-item"><span>Gorgonzolaost</span><span>12 kr</span></div>
+            <div class="extra-item"><span>Mozzarellaost</span><span>12 kr</span></div>
+            <div class="extra-item"><span>Pesto</span><span>12 kr</span></div>
+            <div class="extra-item"><span>Kyckling</span><span>15 kr</span></div>
+            <div class="extra-item"><span>Räkor</span><span>15 kr</span></div>
+            <div class="extra-item"><span>Kebabkött (kyckling)</span><span>15 kr</span></div>
+            <div class="extra-item"><span>Kebabkött (nötkött)</span><span>15 kr</span></div>
+            <div class="extra-item"><span>Kebabkött (fläskkarre)</span><span>15 kr</span></div>
+            <div class="extra-item"><span>Fläskfilé</span><span>15 kr</span></div>
+            <div class="extra-item"><span>Köttfärssås</span><span>15 kr</span></div>
+            <div class="extra-item"><span>Oxfilé</span><span>20 kr</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALLERGY NOTE -->
+      <div class="allergy-note" role="note">
+        <span aria-hidden="true">⚠️</span>
+        <span>Har du allergier eller specialkost? Informera oss vid beställning — vi hjälper dig gärna. Ring <a href="tel:+46315510080" style="color:inherit; font-weight:700;">031-55 10 80</a>.</span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Eda's<span>.</span></div>
+          <p class="footer__brand-desc">Edas Grill &amp; Pizzeria — handgjorda pizzor och grillrätter på Hisingen i Göteborg. "Vi bakar er pizza med kärlek."</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/edas.pizzeria" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+            <a href="https://www.facebook.com/pages/Edas-Pizzeria" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">👍</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navigering</h4>
+          <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="menu.html">Meny</a></li>
+            <li><a href="index.html#om-oss">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Öppettider</h4>
+          <ul>
+            <li><span>Mån–Fre: 10:00–21:00</span></li>
+            <li><span>Lör–Sön: 11:00–21:00</span></li>
+            <li><span>Lunch: Mån–Fre 10–14</span></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+46315510080">031-55 10 80</a></li>
+            <li><span>Katrinerovägen 2A</span></li>
+            <li><span>417 49 Göteborg</span></li>
+            <li><span>Hisingen</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Eda's Pizzeria — Edas Grill &amp; Pizzeria. Alla rättigheter förbehållna.</p>
+        <a href="tel:+46315510080" class="btn btn-primary" style="padding:0.5rem 1.2rem; font-size:0.8rem;">Ring oss →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

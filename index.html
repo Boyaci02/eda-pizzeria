@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eda's Pizzeria — Pizza, Grill & Kebab på Hisingen, Göteborg</title>
+  <meta name="description" content="Eda's Pizzeria på Hisingen i Göteborg. Vi bakar er pizza med kärlek sedan år ett. Handgjorda pizzor, kebab, hamburgare och sallader. Öppet alla dagar." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:title" content="Eda's Pizzeria — Hisingen, Göteborg" />
+  <meta property="og:description" content="Handgjorda pizzor bakade med kärlek. Pizza, Grill & Kebab på Katrinerovägen 2A, Hisingen." />
+  <meta property="og:url" content="https://edaspizzeria.se" />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Eda's Pizzeria",
+    "alternateName": "Edas Grill & Pizzeria",
+    "description": "Pizza, Grill och Kebab-restaurang på Hisingen i Göteborg.",
+    "url": "https://edaspizzeria.se",
+    "telephone": "+46315510080",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Katrinerovägen 2A",
+      "postalCode": "417 49",
+      "addressLocality": "Göteborg",
+      "addressCountry": "SE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 57.7389,
+      "longitude": 11.9217
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "10:00",
+        "closes": "21:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday","Sunday"],
+        "opens": "11:00",
+        "closes": "21:00"
+      }
+    ],
+    "servesCuisine": ["Pizza", "Kebab", "Grill"],
+    "priceRange": "kr",
+    "sameAs": [
+      "https://www.instagram.com/edas.pizzeria",
+      "https://www.facebook.com/pages/Edas-Pizzeria"
+    ]
+  }
+  </script>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       NAVIGATION
+  ========================= -->
+  <nav class="nav" role="navigation" aria-label="Huvudnavigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Eda's<span>.</span></a>
+
+      <div class="nav__links">
+        <a href="menu.html">Meny</a>
+        <a href="index.html#om-oss">Om oss</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+
+      <a href="tel:+46315510080" class="nav__tel">031-55 10 80</a>
+      <a href="menu.html" class="btn btn-primary nav__cta">Beställ nu</a>
+
+      <button class="nav__hamburger" aria-label="Öppna meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" role="dialog" aria-label="Mobilmeny">
+    <button class="mobile-menu__close" aria-label="Stäng meny">&times;</button>
+    <a href="menu.html">Meny</a>
+    <a href="index.html#om-oss">Om oss</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="menu.html" class="btn btn-primary">Beställ nu</a>
+    <span class="mobile-menu__tel">031-55 10 80</span>
+  </div>
+
+  <main>
+    <!-- ========================
+         HERO
+    ========================= -->
+    <section class="hero" aria-label="Välkommen">
+      <div class="hero__bg" role="img" aria-label="Nybakad pizza"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <div class="hero__tag">Nu öppet — Hisingen, Göteborg</div>
+        <h1>Vi bakar er pizza<br>med <em>kärlek</em></h1>
+        <p class="hero__sub">
+          Handgjorda pizzor, färsk kebab och grillat på Katrinerovägen 2A.
+          Öppet mån–fre från 10:00 och helger från 11:00.
+        </p>
+        <div class="hero__actions">
+          <a href="menu.html" class="btn btn-primary">Se vår meny</a>
+          <a href="kontakt.html" class="btn btn-outline">Hitta oss</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scrolla</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ========================
+         USP — VARFÖR OSS
+    ========================= -->
+    <section class="section usp" aria-labelledby="usp-heading">
+      <div class="container">
+        <span class="section-label" style="text-align:center;display:block;margin-bottom:1rem;">Varför välja oss</span>
+        <h2 id="usp-heading" style="text-align:center;margin-bottom:3rem;">Pizza gjord med omtanke</h2>
+        <div class="usp__grid">
+          <div class="usp__card reveal">
+            <span class="usp__icon" aria-hidden="true">🔥</span>
+            <h3>Handgjorda pizzor</h3>
+            <p>Varje pizza rullas och bakas för hand med kärlek — precis som det ska vara.</p>
+          </div>
+          <div class="usp__card reveal reveal-delay-1">
+            <span class="usp__icon" aria-hidden="true">🥗</span>
+            <h3>Fräscha ingredienser</h3>
+            <p>Vi använder alltid färska råvaror av hög kvalitet i alla våra rätter.</p>
+          </div>
+          <div class="usp__card reveal reveal-delay-2">
+            <span class="usp__icon" aria-hidden="true">🚗</span>
+            <h3>Avhämtning</h3>
+            <p>Ring och beställ så har vi din mat klar. Snabbt och enkelt.</p>
+          </div>
+          <div class="usp__card reveal reveal-delay-3">
+            <span class="usp__icon" aria-hidden="true">☀️</span>
+            <h3>Lunchmenyn</h3>
+            <p>Mån–fre 10–14 erbjuder vi förmånliga lunchpriser på utvalda rätter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         POPULÄRA RÄTTER
+    ========================= -->
+    <section class="section popular" aria-labelledby="popular-heading">
+      <div class="container">
+        <div class="popular__header">
+          <div>
+            <span class="section-label">Mest beställda</span>
+            <h2 id="popular-heading">Populära rätter</h2>
+          </div>
+          <a href="menu.html" class="btn btn-outline">Se hela menyn →</a>
+        </div>
+
+        <div class="popular__grid">
+          <!-- Husets pizza -->
+          <article class="dish-card reveal">
+            <div class="dish-card__img" role="img" aria-label="Husets pizza">🍕</div>
+            <div class="dish-card__body">
+              <div class="dish-card__name">Husets <span class="tag tag-special">Favorit</span></div>
+              <p class="dish-card__ingredients">Tomatsås, ost, skinka, champinjoner, köttfärs, stark sås</p>
+              <div class="dish-card__price">80 kr</div>
+            </div>
+          </article>
+
+          <!-- Kebabpizza -->
+          <article class="dish-card reveal reveal-delay-1">
+            <div class="dish-card__img" role="img" aria-label="Ferrari kebabpizza">🥙</div>
+            <div class="dish-card__body">
+              <div class="dish-card__name">Ferrari</div>
+              <p class="dish-card__ingredients">Tomatsås, ost, kebabkött, isbergssallad, lök, tomat, peperoni, gurka</p>
+              <div class="dish-card__price">95 kr</div>
+            </div>
+          </article>
+
+          <!-- Specialpizza -->
+          <article class="dish-card reveal reveal-delay-2">
+            <div class="dish-card__img" role="img" aria-label="Tuve Line specialpizza">⭐</div>
+            <div class="dish-card__body">
+              <div class="dish-card__name">Tuve Line <span class="tag tag-new">Special</span></div>
+              <p class="dish-card__ingredients">Tomatsås, ost, skinka, oxfilé, bacon, köttfärs, lök, vitlök, paprika</p>
+              <div class="dish-card__price">105 kr</div>
+            </div>
+          </article>
+
+          <!-- Vegetarisk -->
+          <article class="dish-card reveal reveal-delay-3">
+            <div class="dish-card__img" role="img" aria-label="Vegetarisk pizza">🥬</div>
+            <div class="dish-card__body">
+              <div class="dish-card__name">Vegetarisk <span class="tag tag-veg">Veg</span></div>
+              <p class="dish-card__ingredients">Tomatsås, ost, champinjoner, lök, paprika, kronärtskocka, peperoni, oliver, ruccola</p>
+              <div class="dish-card__price">75 kr</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         INFO BAND
+    ========================= -->
+    <div class="info-band" role="complementary" aria-label="Snabbinfo">
+      <div class="info-band__inner container">
+        <div class="info-band__item">
+          <span class="info-band__icon" aria-hidden="true">🕐</span>
+          <div class="info-band__text">
+            <span class="info-band__label">Öppettider</span>
+            <span class="info-band__value">Mån–Fre 10–21 &nbsp;|&nbsp; Lör–Sön 11–21</span>
+          </div>
+        </div>
+        <div class="info-band__item">
+          <span class="info-band__icon" aria-hidden="true">📍</span>
+          <div class="info-band__text">
+            <span class="info-band__label">Adress</span>
+            <span class="info-band__value">Katrinerovägen 2A, Hisingen, Göteborg</span>
+          </div>
+        </div>
+        <div class="info-band__item">
+          <span class="info-band__icon" aria-hidden="true">📞</span>
+          <div class="info-band__text">
+            <span class="info-band__label">Ring oss</span>
+            <span class="info-band__value"><a href="tel:+46315510080">031-55 10 80</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================
+         LUNCH
+    ========================= -->
+    <section class="section lunch" aria-labelledby="lunch-heading">
+      <div class="container">
+        <div class="lunch__inner">
+          <div class="lunch__text reveal">
+            <div class="lunch__badge">Luncherbjudande</div>
+            <h2 id="lunch-heading">Förmånlig lunch varje vardag</h2>
+            <p>Måndag till fredag serverar vi lunch med förmånliga priser. Välj bland våra klassiska pizzor och rätter och njut av en god måltid mitt på dagen.</p>
+            <div class="lunch__times">
+              <div class="lunch__time-row">
+                <span>Måndag – Fredag</span>
+                <span>10:00 – 14:00</span>
+              </div>
+              <div class="lunch__time-row">
+                <span>Lördag – Söndag</span>
+                <span>Ingen lunch</span>
+              </div>
+            </div>
+            <a href="tel:+46315510080" class="btn btn-primary">Ring och beställ</a>
+          </div>
+          <div class="lunch__visual reveal reveal-delay-2">
+            <div class="lunch__visual-emoji" aria-hidden="true">🍕</div>
+            <p>Fräscha handgjorda pizzor tillagade med kärlek — varje dag, till alla måltider.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================
+         OM OSS
+    ========================= -->
+    <section class="section section-alt" id="om-oss" aria-labelledby="about-heading">
+      <div class="container">
+        <div style="max-width:700px; margin:0 auto; text-align:center;">
+          <span class="section-label">Vår historia</span>
+          <h2 id="about-heading" style="margin-bottom:1.5rem;">Välkommen till Eda's Pizzeria</h2>
+          <p style="font-size:1.05rem; line-height:1.8; margin-bottom:1.5rem;">
+            Edas Grill &amp; Pizzeria är en kär krog på Hisingen i Göteborg. Hos oss hittar du klassiska handgjorda pizzor, kebab, hamburgare och sallader — lagade med omsorg och färska ingredienser.
+          </p>
+          <p style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem;">
+            Vår passion är enkel: att ge dig en god, vällagad måltid varje gång. Vi är stolta över varje pizza som lämnar vår ugn, och varje tallrik som kommer ut ur köket.
+          </p>
+          <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+            <a href="menu.html" class="btn btn-primary">Utforska menyn</a>
+            <a href="kontakt.html" class="btn btn-outline">Hitta oss</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================
+       FOOTER
+  ========================= -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Eda's<span>.</span></div>
+          <p class="footer__brand-desc">Edas Grill &amp; Pizzeria — handgjorda pizzor och grillrätter på Hisingen i Göteborg. "Vi bakar er pizza med kärlek."</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/edas.pizzeria" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+            <a href="https://www.facebook.com/pages/Edas-Pizzeria" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">👍</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navigering</h4>
+          <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="menu.html">Meny</a></li>
+            <li><a href="index.html#om-oss">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Öppettider</h4>
+          <ul>
+            <li><span>Mån–Fre: 10:00–21:00</span></li>
+            <li><span>Lör–Sön: 11:00–21:00</span></li>
+            <li><span>Lunch: Mån–Fre 10–14</span></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+46315510080">031-55 10 80</a></li>
+            <li><span>Katrinerovägen 2A</span></li>
+            <li><span>417 49 Göteborg</span></li>
+            <li><span>Hisingen</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Eda's Pizzeria — Edas Grill &amp; Pizzeria. Alla rättigheter förbehållna.</p>
+        <a href="menu.html" class="btn btn-primary" style="padding:0.5rem 1.2rem; font-size:0.8rem;">Beställ nu →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

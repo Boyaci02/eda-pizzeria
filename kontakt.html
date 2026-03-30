@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt & Hitta oss — Eda's Pizzeria | Katrinerovägen 2A, Hisingen</title>
+  <meta name="description" content="Hitta Eda's Pizzeria på Katrinerovägen 2A, Hisingen, Göteborg. Ring 031-55 10 80. Öppet mån–fre 10–21, lör–sön 11–21." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍕</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" role="navigation" aria-label="Huvudnavigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Eda's<span>.</span></a>
+      <div class="nav__links">
+        <a href="menu.html">Meny</a>
+        <a href="index.html#om-oss">Om oss</a>
+        <a href="kontakt.html" style="color:#E67E22;">Kontakt</a>
+      </div>
+      <a href="tel:+46315510080" class="nav__tel">031-55 10 80</a>
+      <a href="menu.html" class="btn btn-primary nav__cta">Beställ nu</a>
+      <button class="nav__hamburger" aria-label="Öppna meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" role="dialog" aria-label="Mobilmeny">
+    <button class="mobile-menu__close" aria-label="Stäng meny">&times;</button>
+    <a href="menu.html">Meny</a>
+    <a href="index.html#om-oss">Om oss</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a href="menu.html" class="btn btn-primary">Beställ nu</a>
+    <span class="mobile-menu__tel">031-55 10 80</span>
+  </div>
+
+  <!-- CONTACT HERO -->
+  <header class="contact-hero">
+    <div class="container">
+      <span class="section-label">Hitta oss</span>
+      <h1>Kontakt &amp; Öppettider</h1>
+      <p>Vi finns på Hisingen i Göteborg. Ring, besök oss eller skicka ett meddelande.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- INFO + MAP GRID -->
+    <section class="section" aria-labelledby="contact-info-heading">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- LEFT: Info cards -->
+          <div class="contact-info">
+            <h2 id="contact-info-heading" class="sr-only">Kontaktinformation</h2>
+
+            <!-- Adress -->
+            <div class="info-card reveal">
+              <div class="info-card__header">
+                <span class="info-card__icon" aria-hidden="true">📍</span>
+                <span class="info-card__title">Adress</span>
+              </div>
+              <div class="info-card__content">
+                <strong style="color:var(--text-main); font-family:var(--font-heading); display:block; margin-bottom:0.25rem;">Edas Grill &amp; Pizzeria</strong>
+                Katrinerovägen 2A<br>
+                417 49 Göteborg<br>
+                <em style="color:var(--text-muted); font-size:0.85rem;">Hisingen</em>
+              </div>
+            </div>
+
+            <!-- Telefon -->
+            <div class="info-card reveal reveal-delay-1">
+              <div class="info-card__header">
+                <span class="info-card__icon" aria-hidden="true">📞</span>
+                <span class="info-card__title">Telefon</span>
+              </div>
+              <div class="info-card__content">
+                <a href="tel:+46315510080" style="font-family:var(--font-heading); font-size:1.3rem; font-weight:800; color:var(--text-main);">031-55 10 80</a>
+                <p style="margin-top:0.5rem; font-size:0.85rem;">Ring oss för beställning, frågor eller specialönskemål.</p>
+              </div>
+            </div>
+
+            <!-- Öppettider -->
+            <div class="info-card reveal reveal-delay-2">
+              <div class="info-card__header">
+                <span class="info-card__icon" aria-hidden="true">🕐</span>
+                <span class="info-card__title">Öppettider</span>
+              </div>
+              <div class="info-card__content">
+                <div class="hours-row">
+                  <span>Måndag</span>
+                  <span>10:00 – 21:00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Tisdag</span>
+                  <span>10:00 – 21:00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Onsdag</span>
+                  <span>10:00 – 21:00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Torsdag</span>
+                  <span>10:00 – 21:00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Fredag</span>
+                  <span>10:00 – 21:00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Lördag</span>
+                  <span>11:00 – 21:00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Söndag</span>
+                  <span>11:00 – 21:00</span>
+                </div>
+                <p style="margin-top:1rem; font-size:0.82rem; color:var(--accent-gold);">
+                  ☀️ Lunch serveras mån–fre kl. 10:00–14:00
+                </p>
+              </div>
+            </div>
+
+            <!-- Sociala medier -->
+            <div class="info-card reveal reveal-delay-3">
+              <div class="info-card__header">
+                <span class="info-card__icon" aria-hidden="true">💬</span>
+                <span class="info-card__title">Följ oss</span>
+              </div>
+              <div class="info-card__content">
+                <p style="margin-bottom:1rem;">Följ oss på sociala medier för nyheter och erbjudanden.</p>
+                <div class="social-links">
+                  <a href="https://www.instagram.com/edas.pizzeria" class="social-link" target="_blank" rel="noopener" aria-label="Eda's Pizzeria på Instagram">
+                    <span aria-hidden="true">📷</span> Instagram
+                  </a>
+                  <a href="https://www.facebook.com/pages/Edas-Pizzeria" class="social-link" target="_blank" rel="noopener" aria-label="Eda's Pizzeria på Facebook">
+                    <span aria-hidden="true">👍</span> Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Map -->
+          <div class="reveal reveal-delay-1">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2130.5!2d11.9217!3d57.7389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zS2F0cmluZXJvdsOkZ2VuIDJBLCA0MTcgNDkgR8O2dGVib3Jn!5e0!3m2!1ssv!2sse!4v1234567890"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Eda's Pizzeria på kartan — Katrinerovägen 2A, Hisingen, Göteborg"
+              ></iframe>
+            </div>
+            <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+              <a
+                href="https://www.google.com/maps/search/Edas+Pizzeria+Katrinerovägen+2A+Göteborg"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+                style="flex:1; justify-content:center;"
+              >
+                Öppna i Google Maps
+              </a>
+              <a href="tel:+46315510080" class="btn btn-outline" style="flex:1; justify-content:center;">
+                📞 Ring oss
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-form-section" aria-labelledby="form-heading">
+      <div class="container">
+        <div class="contact-form">
+          <span class="section-label" style="text-align:center;display:block;">Skriv till oss</span>
+          <h2 id="form-heading">Skicka ett meddelande</h2>
+          <p>Har du frågor, feedback eller specialönskemål? Vi svarar så snart vi kan.</p>
+
+          <form novalidate>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" placeholder="Ditt namn" autocomplete="name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="Ditt telefonnummer" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-post</label>
+              <input type="email" id="email" name="email" placeholder="din@epost.se" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Ämne</label>
+              <input type="text" id="subject" name="subject" placeholder="Vad gäller det?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Meddelande</label>
+              <textarea id="message" name="message" placeholder="Skriv ditt meddelande här..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Skicka meddelande</button>
+            <p class="form-note">Vi svarar normalt inom 24 timmar. Akuta ärenden — ring <a href="tel:+46315510080" style="color:var(--accent-orange);">031-55 10 80</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name">Eda's<span>.</span></div>
+          <p class="footer__brand-desc">Edas Grill &amp; Pizzeria — handgjorda pizzor och grillrätter på Hisingen i Göteborg. "Vi bakar er pizza med kärlek."</p>
+          <div class="footer__social">
+            <a href="https://www.instagram.com/edas.pizzeria" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">📷</a>
+            <a href="https://www.facebook.com/pages/Edas-Pizzeria" class="footer__social-link" aria-label="Facebook" target="_blank" rel="noopener">👍</a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navigering</h4>
+          <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="menu.html">Meny</a></li>
+            <li><a href="index.html#om-oss">Om oss</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Öppettider</h4>
+          <ul>
+            <li><span>Mån–Fre: 10:00–21:00</span></li>
+            <li><span>Lör–Sön: 11:00–21:00</span></li>
+            <li><span>Lunch: Mån–Fre 10–14</span></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+46315510080">031-55 10 80</a></li>
+            <li><span>Katrinerovägen 2A</span></li>
+            <li><span>417 49 Göteborg</span></li>
+            <li><span>Hisingen</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Eda's Pizzeria — Edas Grill &amp; Pizzeria. Alla rättigheter förbehållna.</p>
+        <a href="menu.html" class="btn btn-primary" style="padding:0.5rem 1.2rem; font-size:0.8rem;">Beställ nu →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
