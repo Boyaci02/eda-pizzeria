@@ -309,7 +309,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
   flex: 1;
   justify-content: center;
 }
-.mobile-menu__nav a {
+.mobile-menu .mobile-menu__nav a {
   font-family: var(--sans);
   font-size: clamp(1.8rem, 8vw, 2.8rem);
   font-weight: 800;
@@ -320,8 +320,8 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
   transition: color var(--t), padding var(--t);
   letter-spacing: -0.02em;
 }
-.mobile-menu__nav a:first-child { border-top: 1px solid rgba(255,255,255,0.12); }
-.mobile-menu__nav a:hover { color: var(--gold); padding-left: 0.5rem; }
+.mobile-menu .mobile-menu__nav a:first-child { border-top: 1px solid rgba(255,255,255,0.12); }
+.mobile-menu .mobile-menu__nav a:hover { color: var(--gold); padding-left: 0.5rem; }
 .mobile-menu__foot {
   display: flex;
   flex-direction: column;
@@ -1419,8 +1419,9 @@ footer {
 
 @media (max-width: 768px) {
   :root { --nav-h: 60px; }
-  .nav__links, .nav__tel, .nav__cta { display: none; }
-  .nav__hamburger { display: flex; }
+  .nav__links, .nav__tel { display: none; }
+  .nav__cta { display: inline-flex; padding: 0.5rem 1rem; font-size: 0.65rem; }
+  .nav__hamburger { display: flex; margin-left: 0.75rem; }
   .popular__grid { grid-template-columns: 1fr; }
   .stats__inner { grid-template-columns: repeat(2,1fr); }
   .footer__grid { grid-template-columns: 1fr; }
