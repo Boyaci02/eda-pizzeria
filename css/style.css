@@ -294,11 +294,11 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: var(--bg-black);
-  z-index: 999;
+  background: #003d4d;
+  z-index: 1001;
   display: flex;
   flex-direction: column;
-  padding: 3rem 2.5rem;
+  padding: calc(var(--nav-h) + 2rem) 2.5rem 2.5rem;
   transform: translateX(100%);
   transition: transform 0.4s var(--ease);
 }
@@ -312,16 +312,16 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
 }
 .mobile-menu__nav a {
   font-family: var(--sans);
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 8vw, 2.8rem);
   font-weight: 800;
-  color: var(--t-dark);
+  color: #ffffff;
   line-height: 1.2;
-  border-bottom: 1px solid var(--border-d);
-  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  padding: 0.75rem 0;
   transition: color var(--t), padding var(--t);
   letter-spacing: -0.02em;
 }
-.mobile-menu__nav a:first-child { border-top: 1px solid var(--border-d); }
+.mobile-menu__nav a:first-child { border-top: 1px solid rgba(255,255,255,0.12); }
 .mobile-menu__nav a:hover { color: var(--gold); padding-left: 0.5rem; }
 .mobile-menu__foot {
   display: flex;
@@ -331,20 +331,21 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
 }
 .mobile-menu__tel {
   font-size: 0.85rem;
-  color: var(--t-muted);
+  color: rgba(255,255,255,0.55);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 .mobile-menu__close {
-  position: absolute;
-  top: 1.5rem; right: 2rem;
+  position: fixed;
+  top: 1.2rem; right: 1.5rem;
   font-size: 2rem;
-  color: var(--t-muted);
+  color: rgba(255,255,255,0.7);
   line-height: 1;
+  z-index: 1002;
   transition: color var(--t);
 }
-.mobile-menu__close:hover { color: var(--t-dark); }
+.mobile-menu__close:hover { color: #ffffff; }
 
 /* =============================================
    HERO
