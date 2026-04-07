@@ -4,12 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meny — Eda's Pizzeria | Pizza, Kebab & Grill på Hisingen</title>
-  <meta name="description" content="Komplett meny för Eda's Pizzeria. Pizzor från 70 kr, kebabpizzor, specialpizzor, skaldjur, sallader och mer. Hisingen, Göteborg." />
+  <meta name="description" content="Komplett meny för Eda's Pizzeria. 57 pizzor, kebab, sallader, falafel, lasagne, hamburgare och grillrätter. Hisingen, Göteborg." />
 
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -29,7 +26,7 @@
       <a href="tel:+46315510080" class="nav__tel">
         <i data-lucide="phone" class="xs"></i> 031-55 10 80
       </a>
-      <a href="tel:+46315510080" class="btn btn-gold nav__cta">Ring oss</a>
+      <a href="https://qopla.com/restaurant/eda's-pizzeria/qom9pyzdRZ/order" target="_blank" rel="noopener" class="btn btn-gold nav__cta">Beställ online</a>
       <button class="nav__hamburger" aria-label="Öppna meny" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -42,9 +39,10 @@
       <a href="menu.html">Meny</a>
       <a href="index.html#om-oss">Om oss</a>
       <a href="kontakt.html">Kontakt</a>
+      <a href="https://qopla.com/restaurant/eda's-pizzeria/qom9pyzdRZ/order" target="_blank" rel="noopener">Beställ online</a>
     </nav>
     <div class="mobile-menu__foot">
-      <a href="tel:+46315510080" class="btn btn-gold">Ring oss</a>
+      <a href="https://qopla.com/restaurant/eda's-pizzeria/qom9pyzdRZ/order" target="_blank" rel="noopener" class="btn btn-gold">Beställ online</a>
       <a href="tel:+46315510080" class="mobile-menu__tel">
         <i data-lucide="phone" class="xs"></i> 031-55 10 80
       </a>
@@ -61,8 +59,12 @@
           <p class="menu-hero__sub">Handgjorda pizzor, kebab, sallader och mer — alltid tillagade med kärlek och färska ingredienser.</p>
         </div>
         <div class="menu-hero__aside">
-          <span class="menu-hero__cta-label">Beställ per telefon</span>
-          <a href="tel:+46315510080" class="btn btn-primary">
+          <span class="menu-hero__cta-label">Beställ online eller per telefon</span>
+          <a href="https://qopla.com/restaurant/eda's-pizzeria/qom9pyzdRZ/order" target="_blank" rel="noopener" class="btn btn-gold">
+            <i data-lucide="shopping-bag" class="icon-sm"></i>
+            Beställ online
+          </a>
+          <a href="tel:+46315510080" class="btn btn-outline-light" style="margin-top:0.5rem;">
             <i data-lucide="phone" class="icon-sm"></i>
             031-55 10 80
           </a>
@@ -74,33 +76,13 @@
   <!-- STICKY CATEGORY TABS -->
   <div class="menu-tabs" role="navigation" aria-label="Menykategorier">
     <div class="menu-tabs__inner">
-      <button class="menu-tab" data-target="pizzor">
-        <i data-lucide="utensils"></i> Pizzor
-      </button>
-      <button class="menu-tab" data-target="kycklingkebab-pizzor">
-        <i data-lucide="chef-hat"></i> Kyckling
-      </button>
-      <button class="menu-tab" data-target="skaldjur">
-        <i data-lucide="fish"></i> Skaldjur
-      </button>
-      <button class="menu-tab" data-target="kebabpizzor">
-        <i data-lucide="sandwich"></i> Kebabpizzor
-      </button>
-      <button class="menu-tab" data-target="specialpizzor">
-        <i data-lucide="star"></i> Special
-      </button>
-      <button class="menu-tab" data-target="sallader">
-        <i data-lucide="leaf"></i> Sallader
-      </button>
-      <button class="menu-tab" data-target="kebabratter">
-        <i data-lucide="beef"></i> Kebab
-      </button>
-      <button class="menu-tab" data-target="hamburgare">
-        <i data-lucide="circle-dot"></i> Burgare
-      </button>
-      <button class="menu-tab" data-target="ovrigt">
-        <i data-lucide="grid-3x3"></i> Övrigt
-      </button>
+      <button class="menu-tab" data-target="pizzor"><i data-lucide="utensils"></i> Pizzor</button>
+      <button class="menu-tab" data-target="kebab"><i data-lucide="beef"></i> Kebab</button>
+      <button class="menu-tab" data-target="sallader"><i data-lucide="leaf"></i> Sallader</button>
+      <button class="menu-tab" data-target="falafel"><i data-lucide="circle-dot"></i> Falafel</button>
+      <button class="menu-tab" data-target="lasagne"><i data-lucide="layers"></i> Lasagne</button>
+      <button class="menu-tab" data-target="hamburgare"><i data-lucide="sandwich"></i> Hamburgare</button>
+      <button class="menu-tab" data-target="grillratter"><i data-lucide="flame"></i> Grillrätter</button>
     </div>
   </div>
 
@@ -108,7 +90,7 @@
     <div class="container">
 
       <!-- ================================================
-           1. PIZZOR
+           PIZZOR (1–57)
       ================================================= -->
       <section class="menu-section" id="pizzor" aria-labelledby="pizzor-heading">
         <div class="menu-section__header">
@@ -117,120 +99,116 @@
           </div>
           <div>
             <h2 class="menu-section__title" id="pizzor-heading">Pizzor</h2>
-            <p class="menu-section__note">Alla pizzor serveras med valfri sås om inget annat anges</p>
+            <p class="menu-section__note">Alla pizzor serveras med valfri sås om inget annat anges · Glutenfri botten +37 kr · Barnpizza −10 kr</p>
           </div>
         </div>
 
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Margareta</div><p class="menu-item__ingredients">Tomatsås, ost</p></div><div class="menu-item__price">70 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Funghi</div><p class="menu-item__ingredients">Tomatsås, ost, champinjoner</p></div><div class="menu-item__price">70 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Trakya</div><p class="menu-item__ingredients">Tomatsås, ost, fårost, färsk tomat, lök, vitlök</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Skinka</div><p class="menu-item__ingredients">Tomatsås, ost, skinka</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Caprissiosa</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Hawaii</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, ananas</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Gladiatore</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, räkor</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">8.</span> Venedig</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, tonfisk</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">9.</span> Kyckling</div><p class="menu-item__ingredients">Tomatsås, ost, kyckling, champinjoner, lök, valfri sås</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">10.</span> Marinara</div><p class="menu-item__ingredients">Tomatsås, ost, räkor, musslor</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">11.</span> Quatro</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner, räkor, kronärtskocka</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">12.</span> Calzone <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, skinka</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">13.</span> Ali Baba</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, lök, köttfärs</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">14.</span> Laguna</div><p class="menu-item__ingredients">Tomatsås, ost, bacon, lök, köttfärs</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">15.</span> Cacciatore</div><p class="menu-item__ingredients">Tomatsås, ost, salami, champinjoner, lök</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">16.</span> Mexikana <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, köttfärs, paprika, lök, stark sås, peperoni</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">17.</span> Husets <span class="tag tag-special"><i data-lucide="star"></i> Favorit</span></div><p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner, köttfärs, stark sås</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">18.</span> Gorgonzola</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, paprika, gorgonzola</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">19.</span> Padrone <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, köttfärs, lök, stark sås</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">20.</span> Kebabpizza</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, lök, peperoni, valfri sås</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">21.</span> Jägare</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, ägg, bearnaisesås</p></div><div class="menu-item__price">75 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">22.</span> Vegetarisk <span class="tag tag-veg"><i data-lucide="leaf"></i> Veg</span></div><p class="menu-item__ingredients">Tomatsås, ost, champinjoner, lök, paprika, kronärtskocka, peperoni, oliver, ruccola</p></div><div class="menu-item__price">75 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Margareta</div><p class="menu-item__ingredients">Tomatsås, ost</p></div><div class="menu-item__price">110 kr<br><small style="opacity:0.6">Fam 235 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Funghi</div><p class="menu-item__ingredients">Tomatsås, ost, champinjoner</p></div><div class="menu-item__price">115 kr<br><small style="opacity:0.6">Fam 250 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Trakaya</div><p class="menu-item__ingredients">Tomatsås, ost, vitost, färsk tomat, lök, vitlök</p></div><div class="menu-item__price">120 kr<br><small style="opacity:0.6">Fam 260 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Skinka</div><p class="menu-item__ingredients">Tomatsås, ost, skinka</p></div><div class="menu-item__price">120 kr<br><small style="opacity:0.6">Fam 260 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Capricciosa</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner</p></div><div class="menu-item__price">125 kr<br><small style="opacity:0.6">Fam 270 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Hawaii</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, ananas</p></div><div class="menu-item__price">125 kr<br><small style="opacity:0.6">Fam 270 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Gladiator</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, räkor</p></div><div class="menu-item__price">125 kr<br><small style="opacity:0.6">Fam 270 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">8.</span> Venedig</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, tonfisk</p></div><div class="menu-item__price">130 kr<br><small style="opacity:0.6">Fam 270 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">9.</span> Kyckling</div><p class="menu-item__ingredients">Tomatsås, ost, kyckling, champinjoner, lök, valfri sås</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 290 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">10.</span> Marinara</div><p class="menu-item__ingredients">Tomatsås, ost, räkor, musslor</p></div><div class="menu-item__price">125 kr<br><small style="opacity:0.6">Fam 270 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">11.</span> Quatro</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner, räkor, kronärtskocka</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 295 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">12.</span> Calzone <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, skinka</p></div><div class="menu-item__price">120 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">13.</span> Ali Baba</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, lök, köttfärs</p></div><div class="menu-item__price">130 kr<br><small style="opacity:0.6">Fam 295 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">14.</span> Laguna</div><p class="menu-item__ingredients">Tomatsås, ost, bacon, lök, köttfärs</p></div><div class="menu-item__price">130 kr<br><small style="opacity:0.6">Fam 295 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">15.</span> Caccatora</div><p class="menu-item__ingredients">Tomatsås, ost, salami, champinjoner, lök</p></div><div class="menu-item__price">130 kr<br><small style="opacity:0.6">Fam 290 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">16.</span> Mexikana <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, köttfärs, paprika, lök, stark sås, peperoni, piri-piri</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 300 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">17.</span> Husets <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, skinka, champinjoner, köttfärs, stark sås</p></div><div class="menu-item__price">130 kr<br><small style="opacity:0.6">Fam 290 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">18.</span> Gorgonzola</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, paprika, gorgonzola</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 300 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">19.</span> Padrone <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, köttfärs, lök, stark sås</p></div><div class="menu-item__price">130 kr<br><small style="opacity:0.6">Fam 295 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">20.</span> Kebabpizza <span class="tag tag-special"><i data-lucide="star"></i> Storsäljare</span></div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, lök, peperoni, valfri sås · Döner nötkött +10 kr</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 320 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">21.</span> Jägare</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, ägg, bearnaisesås</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 300 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">22.</span> Vegetarisk <span class="tag tag-veg"><i data-lucide="leaf"></i> Veg</span></div><p class="menu-item__ingredients">Tomatsås, ost, champinjoner, lök, paprika, kronärtskocka, peperoni, oliver, ruccola</p></div><div class="menu-item__price">130 kr<br><small style="opacity:0.6">Fam 290 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">23.</span> Kyckling med frukt</div><p class="menu-item__ingredients">Tomatsås, ost, kyckling, ananas, banan, nötter, curry</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 300 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">24.</span> Primavera</div><p class="menu-item__ingredients">Tomatsås, ost, kyckling, ananas, färsk tomat, peperoni, vitlök</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 300 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">25.</span> Rimini</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, räkor, krabba</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 300 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">26.</span> Skaldjur Special</div><p class="menu-item__ingredients">Tomatsås, ost, kräftor, räkor, krabba, vitlök, lök</p></div><div class="menu-item__price">145 kr<br><small style="opacity:0.6">Fam 315 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">27.</span> Ferrari</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, isbergssallad, lök, tomat, peperoni, gurka, kebabsås</p></div><div class="menu-item__price">145 kr<br><small style="opacity:0.6">Fam 350 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">28.</span> Volvo Amazon <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span> <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, jalapeño, vitlökssås</p></div><div class="menu-item__price">135 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">29.</span> Stena Line</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, paprika, lök, tomat</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 330 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">30.</span> Kebabtaco <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, tacosås, jalapeño, vitlökssås</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 330 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">31.</span> Bageriets</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, champinjoner, bearnaisesås, peperoni</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 330 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">32.</span> Lamborgini</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, bacon, ananas, bearnaisesås</p></div><div class="menu-item__price">145 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">33.</span> Adnan's Special</div><p class="menu-item__ingredients">Tomatsås, ost, kyckling, kebabkött, vitost, lök, kebabsås</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 330 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">34.</span> La Bella</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, färsk tomat, vitlök</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">35.</span> Vitlök's Special</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, paprika, gorgonzola, vitlök, färsk tomat</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">36.</span> Sultan</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, räkor, bearnaisesås</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">37.</span> Ciao Ciao <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, vitlök</p></div><div class="menu-item__price">130 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">38.</span> Indiana <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, gorgonzola, bearnaisesås</p></div><div class="menu-item__price">135 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">39.</span> Milano</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, ananas, bearnaisesås</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 330 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">40.</span> Acapulco <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, tacosås, vitlök, jalapeño</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 330 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">41.</span> Afrikana</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, ananas, banan, nötter, curry</p></div><div class="menu-item__price">145 kr<br><small style="opacity:0.6">Fam 340 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">42.</span> Mafioso</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, lök, vitost, peperoni, oliver</p></div><div class="menu-item__price">145 kr<br><small style="opacity:0.6">Fam 340 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">43.</span> Favoriten</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, gorgonzola, bearnaisesås</p></div><div class="menu-item__price">145 kr<br><small style="opacity:0.6">Fam 340 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">44.</span> Orientale</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, champinjoner, gorgonzola, köttfärs, bearnaisesås</p></div><div class="menu-item__price">150 kr<br><small style="opacity:0.6">Fam 360 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">45.</span> Tuve Line</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, bacon, köttfärs, lök, vitlök, paprika</p></div><div class="menu-item__price">150 kr<br><small style="opacity:0.6">Fam 360 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">46.</span> Mozzarella</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, salami, mozzarella, färsk tomat, ruccola</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">47.</span> Della Casa</div><p class="menu-item__ingredients">Tomatsås, ost, salami, parmaskinka, mozzarella, ruccola</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">48.</span> Parma</div><p class="menu-item__ingredients">Tomatsås, ost, parmaskinka, färsk tomat, mozzarella, ruccola</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">49.</span> Formaggi</div><p class="menu-item__ingredients">Tomatsås, ost, mozzarella, fårost, gorgonzola, basilika, ruccola</p></div><div class="menu-item__price">135 kr<br><small style="opacity:0.6">Fam 300 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">50.</span> Västkust Special <span class="tag tag-special">Halvinbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, bearnaisesås</p></div><div class="menu-item__price">130 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">51.</span> Morgan Special</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, ananas, bearnaisesås, köttfärs</p></div><div class="menu-item__price">145 kr<br><small style="opacity:0.6">Fam 340 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">52.</span> Kär &amp; Galen <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, lök, köttfärs, räkor, kräftstjärtar, bearnaisesås, piri piri</p></div><div class="menu-item__price">150 kr<br><small style="opacity:0.6">Fam 360 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">53.</span> Fantasia</div><p class="menu-item__ingredients">Tomatsås, ost, mozzarella, fetaost, soltorkade tomater, oliver, ruccola, pesto</p></div><div class="menu-item__price">140 kr<br><small style="opacity:0.6">Fam 335 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">54.</span> Eda's Special</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, kebabkött, pommes, kebabsås</p></div><div class="menu-item__price">155 kr<br><small style="opacity:0.6">Fam 370 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">55.</span> Kungen <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, bacon, champinjoner, kronärtskocka, stark sås (dubbelbotten)</p></div><div class="menu-item__price">160 kr<br><small style="opacity:0.6">Fam 380 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">56.</span> Lia Special <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, köttfärs, champinjoner, piri piri, vitlök, färsk tomat, gorgonzola, ruccola</p></div><div class="menu-item__price">155 kr<br><small style="opacity:0.6">Fam 360 kr</small></div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">57.</span> Nutellapizza</div><p class="menu-item__ingredients">Nutella, blåbär, banan, marshmallows</p></div><div class="menu-item__price">130 kr</div></div>
+
+        <!-- EXTRAS -->
+        <div class="extras" style="margin-top:2rem;">
+          <button class="extras__toggle" aria-expanded="false">
+            <i data-lucide="plus-circle" class="icon-sm"></i>
+            Extra tillbehör
+            <i data-lucide="chevron-down" class="icon-sm extras__chevron"></i>
+          </button>
+          <div class="extras__body">
+            <div class="extras__grid">
+              <div class="extra-item"><span>Kronärtskocka / Sås på pizzan / Jalapeño</span><span>10 kr</span></div>
+              <div class="extra-item"><span>Övriga grönsaker / Sås i burk</span><span>12 kr</span></div>
+              <div class="extra-item"><span>Pizzasten / Mozzarella / Nötfärs / Skinka / Vitost / Ägg / Salami / Gorgonzola</span><span>15 kr</span></div>
+              <div class="extra-item"><span>Bearnaisesås / Pommes på pizza / Bacon</span><span>15 kr</span></div>
+              <div class="extra-item"><span>Skaldjur / Parmaskinka</span><span>20 kr</span></div>
+              <div class="extra-item"><span>Kebabkött / Kyckling / Oxfilé</span><span>29 kr</span></div>
+              <div class="extra-item"><span>Glutenfri botten</span><span>37 kr</span></div>
+              <div class="extra-item"><span>Barnpizza (rabatt)</span><span>−10 kr</span></div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- ================================================
-           2. KYCKLINGKEBAB-PIZZOR
+           KEBAB
       ================================================= -->
-      <section class="menu-section" id="kycklingkebab-pizzor" aria-labelledby="kyckling-heading">
+      <section class="menu-section" id="kebab" aria-labelledby="kebab-heading">
         <div class="menu-section__header">
           <div class="menu-section__icon-box" aria-hidden="true">
-            <i data-lucide="chef-hat" class="icon-md"></i>
+            <i data-lucide="beef" class="icon-md"></i>
           </div>
           <div>
-            <h2 class="menu-section__title" id="kyckling-heading">Kycklingkebab-pizzor</h2>
+            <h2 class="menu-section__title" id="kebab-heading">Kebab</h2>
+            <p class="menu-section__note">Isbergssallad, gurka, tomat, lök och kebabsås ingår</p>
           </div>
         </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Kyckling med frukt</div><p class="menu-item__ingredients">Tomatsås, ost, ananas, banan, nötter, curry</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Primavera</div><p class="menu-item__ingredients">Tomatsås, ost, kyckling, ananas, färsk tomat, peperoni, vitlök</p></div><div class="menu-item__price">80 kr</div></div>
+
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Kebab i pitabröd</div></div><div class="menu-item__price">125 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Kebabrulle</div></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Kebabtallrik</div><p class="menu-item__ingredients">Välj mellan pommes eller ris</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Kycklingrulle</div></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Kycklingtallrik</div><p class="menu-item__ingredients">Välj mellan pommes eller ris</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Hawaii rulle</div><p class="menu-item__ingredients">Med ananas</p></div><div class="menu-item__price">139 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Rhodos rulle</div><p class="menu-item__ingredients">Med vitost</p></div><div class="menu-item__price">139 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">8.</span> Mexikansk rulle</div><p class="menu-item__ingredients">Med jalapeño</p></div><div class="menu-item__price">139 kr</div></div>
       </section>
 
       <!-- ================================================
-           3. SKALDJURSPIZZOR
-      ================================================= -->
-      <section class="menu-section" id="skaldjur" aria-labelledby="skaldjur-heading">
-        <div class="menu-section__header">
-          <div class="menu-section__icon-box" aria-hidden="true">
-            <i data-lucide="fish" class="icon-md"></i>
-          </div>
-          <div>
-            <h2 class="menu-section__title" id="skaldjur-heading">Skaldjurspizzor</h2>
-          </div>
-        </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Rimini</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, räkor, krabba</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Skaldjur Special</div><p class="menu-item__ingredients">Tomatsås, ost, kräftor, räkor, krabba, vitlök, lök</p></div><div class="menu-item__price">75 kr</div></div>
-      </section>
-
-      <!-- ================================================
-           4. KEBABPIZZOR
-      ================================================= -->
-      <section class="menu-section" id="kebabpizzor" aria-labelledby="kebabpizzor-heading">
-        <div class="menu-section__header">
-          <div class="menu-section__icon-box" aria-hidden="true">
-            <i data-lucide="sandwich" class="icon-md"></i>
-          </div>
-          <div>
-            <h2 class="menu-section__title" id="kebabpizzor-heading">Kebabpizzor</h2>
-          </div>
-        </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Ferrari <span class="tag tag-special"><i data-lucide="star"></i> Populär</span></div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, isbergssallad, lök, tomat, peperoni, gurka</p></div><div class="menu-item__price">95 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Volvo Amazon <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, jalapeño, vitlökssås</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Stena Line</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, paprika, lök, tomat</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Kebabtaco</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, tacosås, jalapeño, vitlökssås</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Bageriets</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, champinjoner, bearnaisesås, peperoni</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Lamborgini</div><p class="menu-item__ingredients">Tomatsås, ost, kebabkött, skinka, bacon, ananas, bearnaisesås</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Adnan's Special</div><p class="menu-item__ingredients">Tomatsås, ost, kyckling, kebab, fårost, lök</p></div><div class="menu-item__price">80 kr</div></div>
-      </section>
-
-      <!-- ================================================
-           5. SPECIALPIZZOR
-      ================================================= -->
-      <section class="menu-section" id="specialpizzor" aria-labelledby="special-heading">
-        <div class="menu-section__header">
-          <div class="menu-section__icon-box" aria-hidden="true">
-            <i data-lucide="star" class="icon-md"></i>
-          </div>
-          <div>
-            <h2 class="menu-section__title" id="special-heading">Specialpizzor</h2>
-            <p class="menu-section__note">Premiumrätter med oxfilé och exklusiva ingredienser</p>
-          </div>
-        </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> La Bella</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, färsk tomat, vitlök</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Vitlöksspecial</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, paprika, gorgonzola, vitlök, färsk tomat</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Sultan</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, räkor, bearnaisesås</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Ciao Ciao <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, vitlök</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Indiana <span class="tag tag-special">Inbakad</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, gorgonzola, bearnaisesås</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Milano</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, ananas, bearnaisesås</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Acapulco <span class="tag tag-spicy"><i data-lucide="flame"></i> Stark</span></div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, lök, tacosås, vitlök, jalapeño</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">8.</span> Afrikana</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, ananas, banan, nötter, curry</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">9.</span> Mafioso</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, lök, fårost, peperoni, oliver</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">10.</span> Favoriten</div><p class="menu-item__ingredients">Tomatsås, ost, oxfilé, champinjoner, gorgonzola, bearnaisesås</p></div><div class="menu-item__price">85 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">11.</span> Orientale</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, champinjoner, gorgonzola, köttfärs, bearnaisesås</p></div><div class="menu-item__price">95 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">12.</span> Tuve Line <span class="tag tag-special"><i data-lucide="star"></i> Stor favorit</span></div><p class="menu-item__ingredients">Tomatsås, ost, skinka, oxfilé, bacon, köttfärs, lök, vitlök, paprika</p></div><div class="menu-item__price">105 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">13.</span> Mozzarella</div><p class="menu-item__ingredients">Tomatsås, ost, skinka, salami, mozzarella, färsk tomat, basilika, ruccola</p></div><div class="menu-item__price">95 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">14.</span> Della Casa</div><p class="menu-item__ingredients">Tomatsås, ost, salami, parmaskinka, mozzarella, basilika, ruccola</p></div><div class="menu-item__price">95 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">15.</span> Parma</div><p class="menu-item__ingredients">Tomatsås, ost, parmaskinka, färsk tomat, mozzarella, basilika, ruccola</p></div><div class="menu-item__price">95 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">16.</span> Formaggi</div><p class="menu-item__ingredients">Tomatsås, ost, mozzarella, fårost, gorgonzola, basilika, ruccola</p></div><div class="menu-item__price">95 kr</div></div>
-      </section>
-
-      <!-- ================================================
-           6. SALLADER
+           SALLADER
       ================================================= -->
       <section class="menu-section" id="sallader" aria-labelledby="sallader-heading">
         <div class="menu-section__header">
@@ -239,130 +217,101 @@
           </div>
           <div>
             <h2 class="menu-section__title" id="sallader-heading">Sallader</h2>
+            <p class="menu-section__note">Isbergssallad, tomat, gurka och valfri sås ingår</p>
           </div>
         </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Kebabsallad</div><p class="menu-item__ingredients">Majs, peperoni</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Kycklingsallad</div><p class="menu-item__ingredients">Majs, paprika, lök, peperoni</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Ost- &amp; Skinksallad</div><p class="menu-item__ingredients">Majs, ägg</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Tonfisksallad</div><p class="menu-item__ingredients">Majs, citron, paprika, lök, oliver</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Räk- &amp; Kräftsallad</div><p class="menu-item__ingredients">Majs, citron, ägg, lök</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Grekisk sallad <span class="tag tag-veg"><i data-lucide="leaf"></i> Veg</span></div><p class="menu-item__ingredients">Fårost, oliver, paprika, lök, peperoni</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Avokadosallad</div><p class="menu-item__ingredients">Skinka, ost, räkor, ananas, majs, avokado</p></div><div class="menu-item__price">80 kr</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">8.</span> Parmasallad</div><p class="menu-item__ingredients">Parmaskinka, oliver, mozzarella, ruccola</p></div><div class="menu-item__price">80 kr</div></div>
+
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Kebabsallad</div><p class="menu-item__ingredients">Kebabkött, majs, peperoni, lök</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Kycklingsallad</div><p class="menu-item__ingredients">Kyckling, ananas, majs, peperoni, paprika, lök</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Ost &amp; skinksallad</div><p class="menu-item__ingredients">Ost, skinka, ananas, ägg, majs</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Tonfisksallad</div><p class="menu-item__ingredients">Tonfisk, citron, lök, paprika, oliver, majs</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Räk &amp; kräftsallad</div><p class="menu-item__ingredients">Räkor, kräftor, majs, citron, ägg, lök</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Caesarsallad</div><p class="menu-item__ingredients">Kyckling, ananas, bacon, paprika, lök</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Grekisk sallad</div><p class="menu-item__ingredients">Vitost, paprika, peperoni, oliver, lök</p></div><div class="menu-item__price">129 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">8.</span> Avokado sallad</div><p class="menu-item__ingredients">Skinka, ost, räkor, ananas, majs, avokado</p></div><div class="menu-item__price">135 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">9.</span> Parma sallad</div><p class="menu-item__ingredients">Parmaskinka, oliver, mozzarella, ruccola</p></div><div class="menu-item__price">135 kr</div></div>
       </section>
 
       <!-- ================================================
-           7. KEBABRÄTTER
+           FALAFEL
       ================================================= -->
-      <section class="menu-section" id="kebabratter" aria-labelledby="kebab-heading">
-        <div class="menu-section__header">
-          <div class="menu-section__icon-box" aria-hidden="true">
-            <i data-lucide="beef" class="icon-md"></i>
-          </div>
-          <div>
-            <h2 class="menu-section__title" id="kebab-heading">Kebabrätter</h2>
-            <p class="menu-section__note">Ring för aktuell meny och priser</p>
-          </div>
-        </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name">Kebabtalrik</div><p class="menu-item__ingredients">Serveras med bröd, sallad och sås.</p></div><div class="menu-item__price">—</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name">Kycklingkebab</div><p class="menu-item__ingredients">Marinerad kyckling, serveras med tillbehör.</p></div><div class="menu-item__price">—</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name">Kebabrulle</div><p class="menu-item__ingredients">Kebabkött i bröd med sallad och sås.</p></div><div class="menu-item__price">—</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name">Kycklingrulle</div><p class="menu-item__ingredients">Kyckling i bröd med sallad och sås.</p></div><div class="menu-item__price">—</div></div>
-        <p style="font-size:0.82rem; color:var(--text-muted); padding:1rem 0; font-style:italic;">Ring <a href="tel:+46315510080" style="color:var(--accent-orange);">031-55 10 80</a> för fullständig meny och aktuella priser.</p>
-      </section>
-
-      <!-- ================================================
-           8. HAMBURGARE
-      ================================================= -->
-      <section class="menu-section" id="hamburgare" aria-labelledby="burgare-heading">
+      <section class="menu-section" id="falafel" aria-labelledby="falafel-heading">
         <div class="menu-section__header">
           <div class="menu-section__icon-box" aria-hidden="true">
             <i data-lucide="circle-dot" class="icon-md"></i>
           </div>
           <div>
-            <h2 class="menu-section__title" id="burgare-heading">Hamburgare</h2>
-            <p class="menu-section__note">Ring för aktuell meny och priser</p>
+            <h2 class="menu-section__title" id="falafel-heading">Falafel</h2>
+            <p class="menu-section__note">Isbergssallad, gurka, tomat, lök och valfri sås ingår</p>
           </div>
         </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name">Hamburgare</div><p class="menu-item__ingredients">Serveras med bröd och tillbehör.</p></div><div class="menu-item__price">—</div></div>
-        <p style="font-size:0.82rem; color:var(--text-muted); padding:1rem 0; font-style:italic;">Ring <a href="tel:+46315510080" style="color:var(--accent-orange);">031-55 10 80</a> för fullständig burgarmeny och priser.</p>
+
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Falafel i pitabröd</div></div><div class="menu-item__price">120 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Falafelrulle</div></div><div class="menu-item__price">125 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Falafeltallrik</div><p class="menu-item__ingredients">Välj mellan pommes eller ris</p></div><div class="menu-item__price">125 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Falafelsallad</div></div><div class="menu-item__price">125 kr</div></div>
       </section>
 
       <!-- ================================================
-           9. ÖVRIGT
+           LASAGNE
       ================================================= -->
-      <section class="menu-section" id="ovrigt" aria-labelledby="ovrigt-heading">
+      <section class="menu-section" id="lasagne" aria-labelledby="lasagne-heading">
         <div class="menu-section__header">
           <div class="menu-section__icon-box" aria-hidden="true">
-            <i data-lucide="grid-3x3" class="icon-md"></i>
+            <i data-lucide="layers" class="icon-md"></i>
           </div>
           <div>
-            <h2 class="menu-section__title" id="ovrigt-heading">Övrigt</h2>
+            <h2 class="menu-section__title" id="lasagne-heading">Lasagne</h2>
           </div>
         </div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name">Lasagne</div><p class="menu-item__ingredients">Hemlagad lasagne. Ring för aktuellt pris.</p></div><div class="menu-item__price">—</div></div>
-        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name">Barnmeny</div><p class="menu-item__ingredients">Anpassad portion för barn. Fråga personalen.</p></div><div class="menu-item__price">—</div></div>
-        <p style="font-size:0.82rem; color:var(--text-muted); padding:1rem 0; font-style:italic;">Vi erbjuder även drycker — ring <a href="tel:+46315510080" style="color:var(--accent-orange);">031-55 10 80</a> för mer info.</p>
+
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Classica</div></div><div class="menu-item__price">115 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Gorgonzola</div></div><div class="menu-item__price">120 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Mexicana</div></div><div class="menu-item__price">120 kr</div></div>
       </section>
 
       <!-- ================================================
-           EXTRATILLVAL
+           HAMBURGARE
       ================================================= -->
-      <div class="extras">
-        <button class="extras__toggle" aria-expanded="false">
-          <span class="extras__icon-wrap">
-            <i data-lucide="plus" class="icon-sm" style="color:var(--accent-orange);"></i>
-            Extratillval — lägg till på din pizza
-          </span>
-          <i data-lucide="chevron-down" class="icon-sm extras__arrow"></i>
-        </button>
-        <div class="extras__body">
-          <div class="extras__grid">
-            <div class="extra-item"><span>Lök</span><span>5 kr</span></div>
-            <div class="extra-item"><span>Kronärtskocka</span><span>5 kr</span></div>
-            <div class="extra-item"><span>Chips</span><span>3 kr</span></div>
-            <div class="extra-item"><span>Tomater (färska)</span><span>6 kr</span></div>
-            <div class="extra-item"><span>Vitlök</span><span>6 kr</span></div>
-            <div class="extra-item"><span>Ananas</span><span>6 kr</span></div>
-            <div class="extra-item"><span>Banan</span><span>6 kr</span></div>
-            <div class="extra-item"><span>Jordnötter</span><span>6 kr</span></div>
-            <div class="extra-item"><span>Majs</span><span>6 kr</span></div>
-            <div class="extra-item"><span>Curry</span><span>6 kr</span></div>
-            <div class="extra-item"><span>Bacon</span><span>7 kr</span></div>
-            <div class="extra-item"><span>Champinjoner</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Sallad</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Oliver</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Paprika</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Peperoni</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Ägg</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Musslor</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Ajvar</span><span>8 kr</span></div>
-            <div class="extra-item"><span>Kräftstjärtar</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Extra-ost</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Salami</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Sparris</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Skinka</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Tonfisk</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Kebabsås</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Bearnaisesås</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Fetaost</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Kantareller</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Tacosås</span><span>10 kr</span></div>
-            <div class="extra-item"><span>Köttfärs</span><span>12 kr</span></div>
-            <div class="extra-item"><span>Gorgonzolaost</span><span>12 kr</span></div>
-            <div class="extra-item"><span>Mozzarellaost</span><span>12 kr</span></div>
-            <div class="extra-item"><span>Pesto</span><span>12 kr</span></div>
-            <div class="extra-item"><span>Kyckling</span><span>15 kr</span></div>
-            <div class="extra-item"><span>Räkor</span><span>15 kr</span></div>
-            <div class="extra-item"><span>Kebabkött (kyckling)</span><span>15 kr</span></div>
-            <div class="extra-item"><span>Kebabkött (nötkött)</span><span>15 kr</span></div>
-            <div class="extra-item"><span>Kebabkött (fläskkarre)</span><span>15 kr</span></div>
-            <div class="extra-item"><span>Fläskfilé</span><span>15 kr</span></div>
-            <div class="extra-item"><span>Köttfärssås</span><span>15 kr</span></div>
-            <div class="extra-item"><span>Oxfilé</span><span>20 kr</span></div>
+      <section class="menu-section" id="hamburgare" aria-labelledby="hamburgare-heading">
+        <div class="menu-section__header">
+          <div class="menu-section__icon-box" aria-hidden="true">
+            <i data-lucide="sandwich" class="icon-md"></i>
+          </div>
+          <div>
+            <h2 class="menu-section__title" id="hamburgare-heading">Hamburgare</h2>
+            <p class="menu-section__note">Med bröd, isbergssallad, gurka, tomat, lök, ketchup &amp; dressing</p>
           </div>
         </div>
-      </div>
+
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Hamburgare 90 g</div></div><div class="menu-item__price">70 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Hamburgare meny 90 g</div><p class="menu-item__ingredients">Inkl 33cl &amp; pommes</p></div><div class="menu-item__price">105 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Hamburgare 150 g</div></div><div class="menu-item__price">80 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Hamburgare meny 150 g</div><p class="menu-item__ingredients">Inkl 33cl &amp; pommes</p></div><div class="menu-item__price">120 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">5.</span> Cheeseburgare 90 g</div><p class="menu-item__ingredients">Med ost</p></div><div class="menu-item__price">111 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">6.</span> Cheeseburgare meny 90 g</div><p class="menu-item__ingredients">Med ost, inkl 33cl &amp; pommes</p></div><div class="menu-item__price">119 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">7.</span> Cheeseburgare 150 g</div><p class="menu-item__ingredients">Med ost</p></div><div class="menu-item__price">115 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">8.</span> Cheeseburgare meny 150 g</div><p class="menu-item__ingredients">Med ost, inkl 33cl &amp; pommes</p></div><div class="menu-item__price">129 kr</div></div>
+      </section>
+
+      <!-- ================================================
+           GRILLRÄTTER
+      ================================================= -->
+      <section class="menu-section" id="grillratter" aria-labelledby="grillratter-heading">
+        <div class="menu-section__header">
+          <div class="menu-section__icon-box" aria-hidden="true">
+            <i data-lucide="flame" class="icon-md"></i>
+          </div>
+          <div>
+            <h2 class="menu-section__title" id="grillratter-heading">Grillrätter</h2>
+          </div>
+        </div>
+
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">1.</span> Schnitzel</div><p class="menu-item__ingredients">Serveras med pommes, citron, bearnaisesås</p></div><div class="menu-item__price">130 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">2.</span> Friterad spätta</div><p class="menu-item__ingredients">Serveras med pommes, citron, remouladsås</p></div><div class="menu-item__price">130 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">3.</span> Chicken nuggets 7 st</div><p class="menu-item__ingredients">Serveras med pommes, valfri sås</p></div><div class="menu-item__price">120 kr</div></div>
+        <div class="menu-item"><div class="menu-item__left"><div class="menu-item__name"><span class="menu-item__num">4.</span> Kycklingspett</div><p class="menu-item__ingredients">Serveras med ris</p></div><div class="menu-item__price">135 kr</div></div>
+      </section>
 
       <!-- ALLERGY NOTE -->
       <div class="allergy-note" role="note">
@@ -417,7 +366,7 @@
       </div>
       <div class="footer__bottom">
         <p class="footer__copy">© 2026 Eda's Pizzeria — Edas Grill &amp; Pizzeria.</p>
-        <a href="tel:+46315510080" class="btn btn-outline" style="padding:0.5rem 1.2rem; font-size:0.72rem;">Ring oss</a>
+        <a href="https://qopla.com/restaurant/eda's-pizzeria/qom9pyzdRZ/order" target="_blank" rel="noopener" class="btn btn-outline-light" style="padding:0.5rem 1.2rem; font-size:0.7rem;">Beställ nu</a>
       </div>
     </div>
   </footer>
