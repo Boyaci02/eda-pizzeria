@@ -368,7 +368,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
 .hero__video-fallback {
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1400&q=80') center/cover;
+  background: url('../assets/Eda_s%20Pizzeria%20%2B%20G%C3%B6teborg/wPT_Eda_s%20Pizzeria%20%2B%20G%C3%B6teborg-Cover.JPG') center/cover;
   filter: brightness(0.38);
 }
 .hero__overlay {
