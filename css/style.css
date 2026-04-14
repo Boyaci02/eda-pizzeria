@@ -281,7 +281,7 @@ h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
 }
 .nav__hamburger span {
   display: block;
-  height: 1.5px;
+  height: 2px;
   background: #ffffff;
   transition: var(--t) var(--ease);
 }
